@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyVolley</string>
+    <string name="message_yesterday">昨天</string>
+    <string name="message_befor_yesterday">前天</string>
+    <string name="task_jintian">今天</string>
+    <string name="task_mingtian">明天</string>
+    <string name="task_houtian">后天</string>
+    <string name="task_yihou">以后</string>
+    <string name="system_tip">系统消息</string>
+    <string name="cal_day_ago">天前</string>
+    <string name="cal_day_end">天后</string>
+    <string name="confirm">确  定</string>
+</resources>
