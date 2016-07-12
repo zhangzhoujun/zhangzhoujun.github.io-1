@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PhotoPicker</string>
+    <string name="cancel">取 消</string>
+</resources>

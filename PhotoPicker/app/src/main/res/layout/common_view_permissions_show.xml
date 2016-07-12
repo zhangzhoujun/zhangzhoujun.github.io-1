@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/v_p_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/white">
+
+    // title
+
+    <TextView
+        android:id="@+id/v_p_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:text="权限申请"
+        android:textColor="@color/btn_text333"
+        android:textSize="15sp"/>
+
+    // content
+
+    <TextView
+        android:id="@+id/v_p_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_p_title"
+        android:paddingBottom="15dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:text="权限申请"
+        android:textColor="@color/btn_text333"
+        android:textSize="12sp"/>
+
+    // button
+
+    <Button
+        android:id="@+id/v_p_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/v_p_content"
+        android:layout_marginRight="15dip"
+        android:layout_marginBottom="15dip"
+        android:background="@drawable/common_btn_color_white"
+        android:text="去设置"
+        android:minHeight="20dip"
+        android:textColor="@color/btn_text333"
+        android:textSize="12sp"/>
+
+    // button
+
+    <Button
+        android:id="@+id/v_p_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/v_p_set"
+        android:layout_marginRight="5dip"
+        android:layout_toLeftOf="@+id/v_p_set"
+        android:layout_marginBottom="15dip"
+        android:background="@drawable/common_btn_color_white"
+        android:text="取消"
+        android:minHeight="20dip"
+        android:textColor="@color/btn_text333"
+        android:textSize="12sp"/>
+</RelativeLayout>

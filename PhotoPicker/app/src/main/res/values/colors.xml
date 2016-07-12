@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="light_gray">#99a4b7</color>
+    <color name="diable_gray">#e4e5e6</color>
+    <color name="light_blue">#87d0f2</color>
+    <color name="bg_gray">#e1e1e1</color>
+    <color name="base_top_layer_bg">#F5F5F5</color>
+    <color name="btn_text666">#FF666666</color>
+    <color name="btn_text333">#FF333333</color>
+    <color name="btn_text999">#FF999999</color>
+    <color name="btn_textccc">#cccccc</color>
+    <color name="buy_red">#DD137B</color>
+    <color name="buy_red_click">#CB1171</color>
+    <color name="white">#ffffffff</color>
+    <color name="fengexian">#E5E5E5</color>
+</resources>
