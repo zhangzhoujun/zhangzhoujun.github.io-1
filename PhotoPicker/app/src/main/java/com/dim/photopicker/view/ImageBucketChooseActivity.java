@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -27,11 +26,13 @@ import com.dim.photopicker.util.IntentConstants;
  */
 
 public class ImageBucketChooseActivity extends BaseActivity {
-    private ImageFetcher mHelper;
-    private List<ImageBucket> mDataList = new ArrayList<ImageBucket>();
+    private ImageFetcher       mHelper;
+    private List<ImageBucket>  mDataList = new ArrayList<ImageBucket>();
     private ListView           mListView;
     private ImageBucketAdapter mAdapter;
     private int                availableSize;
+    // 是否可以裁剪,默认不可以
+    private boolean            doesCanCrop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +56,7 @@ public class ImageBucketChooseActivity extends BaseActivity {
     private void initData() {
         mDataList = mHelper.getImagesBucketList(false);
         availableSize = getIntent().getIntExtra(IntentConstants.EXTRA_CAN_ADD_IMAGE_SIZE, CustomConstants.MAX_IMAGE_SIZE);
+        doesCanCrop = getIntent().getBooleanExtra(IntentConstants.EXTRA_CAN_CROP, false);
     }
 
     private void initView() {
@@ -74,6 +76,7 @@ public class ImageBucketChooseActivity extends BaseActivity {
                 intent.putExtra(IntentConstants.EXTRA_IMAGE_LIST, (Serializable) mDataList.get(position).imageList);
                 intent.putExtra(IntentConstants.EXTRA_BUCKET_NAME, mDataList.get(position).bucketName);
                 intent.putExtra(IntentConstants.EXTRA_CAN_ADD_IMAGE_SIZE, availableSize);
+                intent.putExtra(IntentConstants.EXTRA_CAN_CROP, doesCanCrop);
 
                 startActivityForResult(intent, CustomConstants.RESULT_PICTURE_BACK);
                 ImageBucketChooseActivity.this.finish();

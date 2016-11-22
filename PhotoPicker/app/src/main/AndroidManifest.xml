@@ -74,6 +74,16 @@
             android:launchMode="singleTop">
         </activity>
 
+        <activity
+            android:name="com.dim.photopicker.view.ImageCropActivity"
+            android:launchMode="singleTop">
+        </activity>
+
+        <activity
+            android:name="com.dim.photopicker.view.ImageCrop2Activity"
+            android:launchMode="singleTop">
+        </activity>
+
     </application>
 
 </manifest>

@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -31,14 +30,16 @@ import com.dim.photopicker.util.RunTimeData;
  * 
  */
 public class ImageChooseActivity extends BaseActivity {
-    private List<ImageItem> mDataList    = new ArrayList<ImageItem>();
+    private List<ImageItem>      mDataList    = new ArrayList<ImageItem>();
     private String               mBucketName;
     private int                  availableSize;
     private GridView             mGridView;
     private TextView             mBucketNameTv;
     private TextView             cancelTv;
-    private ImageGridAdapter mAdapter;
+    private ImageGridAdapter     mAdapter;
     private Button               mFinishBtn;
+    // 是否可以裁剪,默认不可以
+    private boolean              doesCanCrop;
     private ArrayList<ImageItem> selectedImgs = new ArrayList<ImageItem>();
 
     @SuppressWarnings("unchecked")
@@ -55,6 +56,7 @@ public class ImageChooseActivity extends BaseActivity {
             mBucketName = "请选择";
         }
         availableSize = getIntent().getIntExtra(IntentConstants.EXTRA_CAN_ADD_IMAGE_SIZE, CustomConstants.MAX_IMAGE_SIZE);
+        doesCanCrop = getIntent().getBooleanExtra(IntentConstants.EXTRA_CAN_CROP, false);
 
         initView();
         initListener();
@@ -90,10 +92,15 @@ public class ImageChooseActivity extends BaseActivity {
         mFinishBtn.setOnClickListener(new OnClickListener() {
 
             public void onClick(View v) {
+                RunTimeData.getInstance().setChoseImage(selectedImgs);
                 Intent intent = new Intent();
                 intent.putExtra(IntentConstants.EXTRA_IMAGE_LIST, (Serializable) selectedImgs);
-                setResult(CustomConstants.RESULT_PICTURE_BACK, intent);
-                RunTimeData.getInstance().setChoseImage(selectedImgs);
+                if (doesCanCrop) {
+                    intent.setClass(ImageChooseActivity.this, ImageCrop2Activity.class);
+                    startActivity(intent);
+                } else {
+                    setResult(CustomConstants.RESULT_PICTURE_BACK, intent);
+                }
                 ImageChooseActivity.this.finish();
             }
 

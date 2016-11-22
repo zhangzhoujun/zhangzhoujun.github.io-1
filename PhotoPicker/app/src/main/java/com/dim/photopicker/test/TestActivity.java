@@ -76,6 +76,7 @@ public class TestActivity extends BaseActivity {
         }
         Intent intent = new Intent(TestActivity.this, ImageBucketChooseActivity.class);
         intent.putExtra(IntentConstants.EXTRA_CAN_ADD_IMAGE_SIZE, count);
+        intent.putExtra(IntentConstants.EXTRA_CAN_CROP, true);
         startActivityForResult(intent, CustomConstants.RESULT_PICTURE_BACK);
     }
 

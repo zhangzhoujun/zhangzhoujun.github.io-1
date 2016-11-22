@@ -9,6 +9,8 @@ public class IntentConstants {
     public static final String EXTRA_CAN_ADD_IMAGE_SIZE   = "can_add_image_size";
     // 当前选择的照片位置
     public static final String EXTRA_CURRENT_IMG_POSITION = "current_img_position";
+    // 选好照片是否可以裁剪
+    public static final String EXTRA_CAN_CROP             = "EXTRA_CAN_CROP";
 
-    public static final String EXTRA_CAN_DEL = "EXTRA_CAN_DEL";
+    public static final String EXTRA_CAN_DEL              = "EXTRA_CAN_DEL";
 }
