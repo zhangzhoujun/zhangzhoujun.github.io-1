@@ -2,12 +2,12 @@ package com.android.myvolley.volleypkg;
 
 import org.json.JSONObject;
 
-import com.android.myvolley.model.MResponse;
+import com.android.myvolley.model.MResponseBase;
 import com.android.myvolley.volley.VolleyError;
 
 import android.content.Context;
 
-public class ReverseRegisterNetworkHelper extends NetworkHelper<MResponse> {
+public class ReverseRegisterNetworkHelper extends NetworkHelper<MResponseBase> {
 
     public ReverseRegisterNetworkHelper(Context context) {
         super(context);
@@ -20,7 +20,7 @@ public class ReverseRegisterNetworkHelper extends NetworkHelper<MResponse> {
 
     @Override
     protected void disposeResponse(JSONObject response, Object tag) {
-        MResponse rrBean = new MResponse();
+        MResponseBase rrBean = new MResponseBase();
 
         if (response != null) {
             try {
@@ -71,7 +71,7 @@ public class ReverseRegisterNetworkHelper extends NetworkHelper<MResponse> {
      * 
      * @param json
      */
-    // private void refreshUserInfo(String json, MResponse rrBean, Object tag) {
+    // private void refreshUserInfo(String json, MResponseBase rrBean, Object tag) {
     // JSONObject dataJson;
     // try {
     // dataJson = new JSONObject(json);

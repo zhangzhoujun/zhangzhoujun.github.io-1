@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.ContentUris;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.content.pm.PackageInfo;
@@ -31,11 +30,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.android.myvolley.R;
-import com.android.myvolley.model.MResponse;
-import com.google.gson.Gson;
-
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.android.myvolley.model.MResponseBase;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -649,7 +644,7 @@ public class BaseComFunc {
      * @paramTips
      * @param context
      */
-    public static void ShowTipDialog(MResponse response, String tips, Context context) {
+    public static void ShowTipDialog(MResponseBase response, String tips, Context context) {
         if (response != null) {
             if (response.getBiz_msg() != null && !response.getBiz_msg().equals("") && !response.getBiz_msg().equals("null")) {
                 tips = tips + ":" + response.getBiz_msg();

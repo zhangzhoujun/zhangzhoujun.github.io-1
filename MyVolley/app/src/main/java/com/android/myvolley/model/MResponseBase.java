@@ -2,7 +2,7 @@ package com.android.myvolley.model;
 
 import java.io.Serializable;
 
-public class MResponse implements Serializable {
+public class MResponseBase implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -13,7 +13,7 @@ public class MResponse implements Serializable {
     private String all_data;
     private String server_time;
 
-    public MResponse() {
+    public MResponseBase() {
         super();
         this.biz_action = "";
         this.biz_msg = "";

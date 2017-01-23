@@ -6,9 +6,9 @@ import java.util.List;
 
 import org.json.JSONObject;
 
+import com.android.myvolley.model.MResponseBase;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.android.myvolley.model.MResponse;
 
 public class JsonFuncMgr {
 
@@ -26,7 +26,7 @@ public class JsonFuncMgr {
      * @param response
      * @return
      */
-    public Boolean ValidateResult(MResponse response) {
+    public Boolean ValidateResult(MResponseBase response) {
         Boolean bReturn = true;
         if (response.getBiz_action().equals("1")) {
             bReturn = false;
@@ -52,7 +52,7 @@ public class JsonFuncMgr {
      * @param type
      * @return
      */
-    public <T> T fromJson(MResponse response, Type type) throws Exception {
+    public <T> T fromJson(MResponseBase response, Type type) throws Exception {
 
         GsonBuilder gsonb = new GsonBuilder();
         DateDeserializer dds = new DateDeserializer();
@@ -73,7 +73,7 @@ public class JsonFuncMgr {
      * @param type
      * @return
      */
-    public <T> T fromJson(MResponse response, Class<T> type) throws Exception {
+    public <T> T fromJson(MResponseBase response, Class<T> type) throws Exception {
         Gson gson = new Gson();
         if (ValidateResult(response)) {
             return gson.fromJson(response.getData(), type);
@@ -120,9 +120,9 @@ public class JsonFuncMgr {
      * @param strReturn
      * @return
      */
-    public MResponse GetMResponse(String strReturn) {
+    public MResponseBase GetMResponse(String strReturn) {
         try {
-            MResponse response = new MResponse();
+            MResponseBase response = new MResponseBase();
             JSONObject dataJson = new JSONObject(strReturn);
             if (dataJson.has("biz_action")) {
                 response.setBiz_action(dataJson.getString("biz_action"));

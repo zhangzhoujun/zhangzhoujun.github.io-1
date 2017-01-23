@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.android.myvolley.json.DateDeserializer;
-import com.android.myvolley.model.MResponse;
+import com.android.myvolley.model.MResponseBase;
 import com.android.myvolley.utils.BaseComConst;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -41,7 +41,7 @@ public class BaseNetWorkFun {
      * @param response
      * @return
      */
-    public Boolean ValidateResult(MResponse response) {
+    public Boolean ValidateResult(MResponseBase response) {
         Boolean bReturn = true;
         if (response.getBiz_action().equals("1")) {
             bReturn = false;
@@ -56,7 +56,7 @@ public class BaseNetWorkFun {
      * @param type
      * @return
      */
-    public <T> T fromJson(MResponse response, Type type) throws Exception {
+    public <T> T fromJson(MResponseBase response, Type type) throws Exception {
         GsonBuilder gsonb = new GsonBuilder();
         DateDeserializer dds = new DateDeserializer();
         gsonb.registerTypeAdapter(Date.class, dds);
@@ -76,7 +76,7 @@ public class BaseNetWorkFun {
      * @param type
      * @return
      */
-    public <T> T fromJson(MResponse response, Class<T> type) throws Exception {
+    public <T> T fromJson(MResponseBase response, Class<T> type) throws Exception {
         Gson gson = new Gson();
         if (ValidateResult(response)) {
             return gson.fromJson(response.getData(), type);
@@ -111,7 +111,7 @@ public class BaseNetWorkFun {
      * @param isImid
      *            是否是百川的ID
      */
-    public void sendGroupSignIns(NetworkHelper<MResponse> networkHelper, String baichuanImId, String signId, boolean isImid) {
+    public void sendGroupSignIns(NetworkHelper<MResponseBase> networkHelper, String baichuanImId, String signId, boolean isImid) {
         Map<String, String> params = new HashMap<String, String>();
         params.put("is_im_id", String.valueOf(isImid));
         networkHelper.sendPostRequest(BaseComConst.SERVICE_PROTOCAL_DOMAIN + "/api/v2/chat_groups/" + baichuanImId + "/sign_ins/" + signId + "/members",
@@ -127,7 +127,7 @@ public class BaseNetWorkFun {
      * @param signId
      * @param isImid
      */
-    public void sendDeleteGroupSign(NetworkHelper<MResponse> networkHelper, String baichuanImId, String signId, boolean isImid) {
+    public void sendDeleteGroupSign(NetworkHelper<MResponseBase> networkHelper, String baichuanImId, String signId, boolean isImid) {
         Map<String, String> params = new HashMap<String, String>();
         params.put("is_im_id", String.valueOf(isImid));
         networkHelper.sendDeleteRequest(BaseComConst.SERVICE_PROTOCAL_DOMAIN + "/api/v2/chat_groups/" + baichuanImId + "/sign_ins/" + signId, params,
@@ -140,7 +140,7 @@ public class BaseNetWorkFun {
      * 
      * @param networkHelper
      */
-    public void getImConfig(NetworkHelper<MResponse> networkHelper) {
+    public void getImConfig(NetworkHelper<MResponseBase> networkHelper) {
         networkHelper.sendGETRequest(BaseComConst.SERVICE_PROTOCAL_DOMAIN + "/api/utils/im_config", null, TAG_GET_IM_CONFIG);
         return;
     }
