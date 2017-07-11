@@ -14,51 +14,50 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
- * 普通的对话框，比代一个按钮，默认确定，第二个按钮默认不显示
- * 中间文本区域如果不满全屏，那么显示对应的大小，如果超过全屏，那么可滑动
+ * 普通的对话框，比代一个按钮，默认确定，第二个按钮默认不显示 中间文本区域如果不满全屏，那么显示对应的大小，如果超过全屏，那么可滑动
  * <p>
  * Created by dim on 2017/1/12 14:16 邮箱：271756926@qq.com
  */
 
 public class DimAlertDialog extends Dialog {
-    private Context mContext;
+    private Context                 mContext;
     // dialog的标题
-    private TextView dialogTitle;
+    private TextView                dialogTitle;
     // dialog的显示文本
-    private TextView dialogMessage;
+    private TextView                dialogMessage;
     // dialog的左边按钮，默认取消按钮
-    private Button dialogCancle;
+    private Button                  dialogCancle;
     // dialog的右边按钮，默认确定按钮
-    private Button dialogComfire;
+    private Button                  dialogComfire;
     // 整个布局的根结点
-    private View mRootView;
+    private RelativeLayout          mRootView;
     // 左边按钮的点击事件监听，默认取消
     private OnKLMAlertClickListener mCancelClickListener;
     // 右边按钮的点击事件监听，默认确定
     private OnKLMAlertClickListener mConfirmClickListener;
 
     // 文案显示的位置，默认剧中
-    private int mGravtity = Gravity.CENTER;
+    private int                     mGravtity    = Gravity.CENTER;
     // 当次设置的标题
-    private String mTitleText;
+    private String                  mTitleText;
     // 当次设置的内容
-    private String mContentText;
+    private String                  mContentText;
     // 当次设置的左边按钮的文案
-    private String mCancelText;
+    private String                  mCancelText;
     // 当次设置的右边按钮的文案
-    private String mConfirmText;
+    private String                  mConfirmText;
     // 确认按钮的背景
-    private Drawable mConfirmDrawable;
+    private Drawable                mConfirmDrawable;
     // 取消按钮的背景
-    private Drawable mCancleDrawable;
+    private Drawable                mCancleDrawable;
     // 是否需要显示文案内容
-    private boolean mShowMessage = true;
+    private boolean                 mShowMessage = true;
     // 是否需要显示取消按钮
-    private boolean mShowCancel = true;
+    private boolean                 mShowCancel  = true;
     // 屏幕的高度
-    private int mScreenHeight;
+    private int                     mScreenHeight;
     // 屏幕的宽度
-    private int mScreenWid;
+    private int                     mScreenWid;
 
     public DimAlertDialog(Context context, int screenHigh, int screenWid) {
         super(context, R.style.dim_dialog);
@@ -74,7 +73,7 @@ public class DimAlertDialog extends Dialog {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.base_layout);
 
-        mRootView = (View) findViewById(R.id.base_warning_root);
+        mRootView = (RelativeLayout) findViewById(R.id.base_warning_root);
         dialogTitle = (TextView) findViewById(R.id.base_warning_title);
         dialogMessage = (TextView) findViewById(R.id.base_warning_content);
         dialogCancle = (Button) findViewById(R.id.base_warning_btn_cancle);
@@ -291,8 +290,7 @@ public class DimAlertDialog extends Dialog {
     }
 
     /**
-     * 方法的功能描述
-     * 设置确认按钮的背景色
+     * 方法的功能描述 设置确认按钮的背景色
      *
      * @author dim.
      * @time 2017/1/23 10:48.
@@ -306,8 +304,7 @@ public class DimAlertDialog extends Dialog {
     }
 
     /**
-     * 方法的功能描述
-     * 取消按钮的背景色
+     * 方法的功能描述 取消按钮的背景色
      *
      * @author dim.
      * @time 2017/1/23 10:50.

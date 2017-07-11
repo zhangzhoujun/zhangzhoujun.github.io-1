@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#DD137B</color>
+    <color name="colorAccent">#DD137B</color>
+
+    <color name="klm_red">#DD137B</color>
+    <color name="klm_red_100">#FFDD137B</color>
+    <color name="klm_red_50">#7ADD137B</color>
+    <color name="klm_999">#999999</color>
+    <color name="klm_666">#666666</color>
+    <color name="klm_333">#333333</color>
+    <color name="klm_3D4855">#3D4855</color>
+    <color name="klm_444954">#444954</color>
+    <color name="klm_ccc">#CCCCCC</color>
+    <color name="klm_F5">#F5F5F5</color>
+    <color name="klm_97">#979797</color>
+    <color name="klm_3F">#3F3F3F</color>
+    <color name="klm_EA">#EAEAEA</color>
+    <color name="klm_E5">#E5E5E5</color>
+    <color name="klm_598FFB">#598FFB</color>
+
+    <color name="gray">#FF808080</color>
+    <color name="green">#66CC9A</color>
+    <color name="orange">#FF8B2E</color>
+    <color name="darkblue">#FF00008b</color>
+    <color name="blue">#FF0000ff</color>
+    <color name="red">#FFDC5648</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_10">#19ffffff</color>
+    <color name="com_bg_klm">#2D2C33</color>
+    <color name="com_bg_mm">#68A3FB</color>
+    <color name="com_line">#E5E5E5</color>
+    <color name="transparent_black">#94333232</color>
+</resources>

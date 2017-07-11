@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">KLMLibrary</string>
+
+    <string name="request_write_external_storage">-权限中开启存储空间权限，</string>
+    <string name="request_camera">-权限中开启相机权限，</string>
+    <string name="request_call_phone">-权限中开启电话权限，</string>
+    <string name="request_read_phone">-权限中开启电话权限，</string>
+    <string name="request_access_fine_location">-权限中开启定位服务，</string>
+    <string name="request_access_left">请在设置-应用-</string>
+    <string name="request_access_right_1">以正常使用</string>
+    <string name="request_access_right_2">功能</string>
+    <string name="message_yesterday">昨天</string>
+    <string name="message_befor_yesterday">前天</string>
+    <string name="task_jintian">今天</string>
+    <string name="task_mingtian">明天</string>
+    <string name="task_houtian">后天</string>
+    <string name="task_yihou">以后</string>
+    <string name="system_tip">系统消息</string>
+    <string name="cal_day_ago">天前</string>
+    <string name="cal_day_end">天后</string>
+    <string name="permission_need">权限申请</string>
+    <string name="go_set">去设置</string>
+    <string name="cancel">取消</string>
+    <string name="permission_ok">授权权限成功</string>
+
+    <string name="klm_icon_back">&#xe8a2;</string>
+    <string name="klm_icon_cart">&#xe690;</string>
+    <string name="klm_icon_msg">&#xe691;</string>
+    <string name="klm_icon_right">&#xe617;</string>
+    <string name="klm_icon_question">&#xe61f;</string>
+
+    <string name="refresh_pull_down">下拉可以刷新</string>
+    <string name="refresh_release_refresh">松开立即刷新</string>
+    <string name="refresh_ing">正在刷新数据中...</string>
+    <string name="refresh_pull_up">上拉加载更多</string>
+    <string name="refresh_pull_up_release">松开加载更多</string>
+    <string name="refresh_up_ing">正在加载更多的数据...</string>
+</resources>

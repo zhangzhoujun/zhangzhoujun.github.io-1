@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 通用的KLMTopBar -->
+    <declare-styleable name="Topbar">
+        <attr name="barBg" format="color|reference"/>
+        <attr name="titleText" format="string|reference"/>
+        <attr name="titleSize" format="dimension|reference"/>
+        <attr name="titleColor" format="color|reference"/>
+
+        <attr name="leftText" format="string|reference"/>
+        <attr name="rightText" format="string|reference"/>
+        <attr name="rightLeftText" format="string|reference"/>
+        <attr name="iconSize" format="dimension|reference"/>
+        <attr name="iconColor" format="color|reference"/>
+        <!-- 当前的App类型，1为卡乐猫，2为喵秘 -->
+        <attr name="appType" format="integer|reference"/>
+        <attr name="leftColor" format="color|reference"/>
+        <attr name="rightColor" format="color|reference"/>
+        <attr name="rightLeftColor" format="color|reference"/>
+        <attr name="leftSize" format="dimension|reference"/>
+        <attr name="rightSize" format="dimension|reference"/>
+        <attr name="rightLeftSize" format="dimension|reference"/>
+    </declare-styleable>
+
+    <!-- 尾部有内容的TextView -->
+    <declare-styleable name="FolderTextView">
+        <attr name="foldline" format="integer" />
+    </declare-styleable>
+</resources>
