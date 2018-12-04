@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="c_222222">#262626</color>
+    <color name="c_33333">#333333</color>
+    <color name="c_c0c0c0">#C0C0C0</color>
+    <color name="c_44444">#484452</color>
+    <color name="c_88888">#817e89</color>
+    <color name="c_66666">#666666</color>
+    <color name="c_979797">#979797</color>
+    <color name="c_dddddd">#dddddd</color>
+    <color name="c_FF3C52">#FFFF3C52</color>
+    <color name="tab_main_text">#3b3b3b</color>
+    <color name="transparent_80">#44000000</color>
+    <color name="trans_gray">#88BABABA</color>
+    <color name="trans_60">#99484848</color>
+    <color name="c_A27234">#FFA27234</color>
+    <color name="c_666666">#FF666666</color>
+    <color name="c_E5E5E5">#FFE5E5E5</color>
+</resources>
