@@ -5,6 +5,9 @@
 
 ## BrandSort是一个品牌排序。增加了一些动画，可以根据sortid排序，默认sordid越大越排在前面。
 
+![演示Gif](https://github.com/dim1989/zhangzhoujun.github.io/blob/master/BrandSort/yanshi.gif?raw=true)
+
+
 # DimDialog
 
 ## DimDIalog是一个简单的对话框，就是普通的对话框，第一个按钮，默认确定，第二个按钮默认不显示中间文本区域如果不满全屏，那么显示对应的大小，如果超过全屏，那么可滑动
