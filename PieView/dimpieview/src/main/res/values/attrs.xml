@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DimPieView">
+        <attr name="centerTextSize" format="dimension" />
+        <attr name="dataTextSize" format="dimension" />
+        <attr name="centerTextColor" format="color" />
+        <attr name="dataTextColor" format="color" />
+        <attr name="circleWidth" format="dimension" />
+        <attr name="circleRadius" format="dimension" />
+        <attr name="circleStartDeviation" format="integer" />
+        <attr name="showPartPercent" format="boolean" />
+        <attr name="needCircleWidthReduce" format="boolean" />
+        <attr name="circleWidthReduce" format="dimension" />
+    </declare-styleable>
+</resources>

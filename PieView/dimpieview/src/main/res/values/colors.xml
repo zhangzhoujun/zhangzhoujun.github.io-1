@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="red">#EE0000</color>
+    <color name="blue">#436EEE</color>
+    <color name="green">#00CD00</color>
+    <color name="purple">#E066FF</color>
+
+    <color name="not_pay">#ffb847</color>
+    <color name="bug_success">#f74646</color>
+
+    <color name="c_lianmeng">#FFDDCB8B</color>
+    <color name="c_chanye">#FF94EB7E</color>
+    <color name="c_yonghu">#FFFF6A6A</color>
+
+    <color name="c_normal">#FF242424</color>
+    <color name="c_back">#FF17181A</color>
+</resources>
