@@ -207,8 +207,10 @@ MGCGame	|梦工厂单个游戏页面，需要配置third_key为游戏ID
 ### 只需后台搭建一个页面，编译成对应的json文件，app解析对应的文件，渲染出原生的页面，暂时APP支持的页面组件类型有：
 
 * 基础组件
+
   ![基础组件.png](https://zzjtest.oss-cn-hangzhou.aliyuncs.com/jc1.png)
 * 业务组件
+
   ![业务组件.png](https://zzjtest.oss-cn-hangzhou.aliyuncs.com/yw1.png)
 * 自定义组件
     1. 后台设置几个基础组件的宽高和背景；
