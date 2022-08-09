@@ -1,6 +1,13 @@
 # zhangzhoujun.github.io
 张舟俊的个人博客
 
+# Pontus
+## Pontus是Android组件化项目，同时可以根据json文件自定义动态渲染页面，不需要更新版本；
+### [查看详情](https://github.com/zhangzhoujun/zhangzhoujun.github.io-1/tree/master/pontus#readme)
+  
+# PontusIOS
+## PontusIOS是IOS的组件化项目，同时可以根据json文件自定义动态渲染页面，不需要更新版本；功能比Android版本少；
+
 # BrandSort
 
 ## BrandSort是一个品牌排序。增加了一些动画，可以根据sortid排序，默认sordid越大越排在前面。
