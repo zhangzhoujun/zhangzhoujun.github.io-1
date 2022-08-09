@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_305"
+        android:background="@color/white">
+
+        <com.qm.lib.widget.dim.AppImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/dp_165"
+            android:layout_height="@dimen/dp_165"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:scaleType="centerCrop" />
+
+        <com.qm.lib.widget.dim.AppTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_below="@+id/icon"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:textColor="@color/c_333333"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+        <com.qm.lib.widget.dim.AppTextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:textColor="@color/qmui_config_color_red"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold" />
+
+        <com.qm.lib.widget.dim.AppTextView
+            android:id="@+id/buy"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_25"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@drawable/home_good_btn_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:text="立即购买"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15" />
+
+        <com.qm.lib.widget.dim.AppTextView
+            android:id="@+id/coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_25"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_toLeftOf="@+id/buy"
+            android:background="@drawable/home_good_btn_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:text="领取优惠券"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15" />
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,16 @@
+<resources>
+<!--    <string name="baseUrl">http://server.qmjzl.com/pegasus</string>-->
+<!--    <string name="webHost">http://athena.qmjzl.com/#</string>-->
+
+<!--    &lt;!&ndash; 线上的 &ndash;&gt;-->
+<!--    <string name="GG_APPID">204964258193080320</string>-->
+<!--    <string name="GG_OPEN_ID">204964586443505664</string>-->
+<!--    <string name="GG_VIDEO_ID">204964770405679104</string>-->
+<!--    <string name="KS_CHANNED_ID">226104625139286016</string>-->
+
+<!--    <string name="HD_CHANNEL_ID">10001</string>-->
+<!--    <string name="HD_VIDEO_ID">226104705154023424</string>-->
+<!--    <string name="HD_BANNER_ID">226104847819079680</string>-->
+<!--    <string name="HD_XINXILIU_ID">226847032000643072</string>-->
+<!--    <string name="HD_INTERACTION_ID">226104959400148992</string>-->
+</resources>

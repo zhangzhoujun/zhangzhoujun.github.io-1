@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="android.text.TextUtils" />
+
+        <variable
+            name="viewModel"
+            type="com.gos.nodetransfer.ui.ks.KSViewModel" />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_333333">
+
+        <FrameLayout
+            android:id="@+id/ks_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <com.qm.lib.widget.dim.AppImageView
+            android:layout_width="@dimen/dp_149"
+            android:layout_height="@dimen/dp_30"
+            android:background="@mipmap/qm_ks_logo"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_30"/>
+
+        <RelativeLayout
+            android:id="@+id/time_layout"
+            android:layout_width="@dimen/dp_73"
+            android:layout_height="@dimen/dp_95"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_110"
+            android:gravity="center_horizontal"
+            android:onClick="@{viewModel.doGetReward}"
+            android:orientation="vertical"
+            android:visibility="@{viewModel.mShowReward ? View.VISIBLE : View.GONE}">
+
+            <com.qm.lib.widget.dim.AppImageView
+                android:layout_width="@dimen/dp_73"
+                android:layout_height="@dimen/dp_95"
+                android:background="@mipmap/qm_ks_reward_icon" />
+
+            <com.qm.lib.widget.dim.AppTextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_48"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp_2"
+                android:text="@{viewModel.mTimeShow}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+
+            <com.qm.lib.widget.dim.AppTextView
+                android:id="@+id/sure"
+                android:layout_width="@dimen/dp_62"
+                android:layout_height="@dimen/dp_19"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dp_7_5"
+                android:background="@mipmap/qm_ks_reward_btn"
+                android:gravity="center"
+                android:text="@{viewModel.mSureShow}"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_9"
+                android:textStyle="bold"
+                android:visibility="@{TextUtils.isEmpty(viewModel.mSureShow) ? View.INVISIBLE : View.VISIBLE}" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

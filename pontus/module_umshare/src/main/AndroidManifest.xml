@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.qm.module_umshare">
+
+    <application>
+
+        <activity
+            android:name="com.qm.module_umshare.ui.share.ShareMainActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- share -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1110430099" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:configChanges" />
+
+        <activity
+            android:name=".ui.dialog.OnlyOneDialogActivity"
+            android:theme="@style/um_shareTheme" />
+    </application>
+
+</manifest>

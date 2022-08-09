@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qy.dodule_goods">
+
+    <application>
+
+        <activity android:name=".ui.GoodsActivity"/>
+
+    </application>
+
+</manifest>

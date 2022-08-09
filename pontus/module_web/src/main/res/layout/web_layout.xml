@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.gos.module_web.GosWebViewModel" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:binding="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8F8F8"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/status_bar_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            android:background="@color/transparent"
+            android:visibility="gone" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:background="#F8F8F8">
+
+            <com.gos.module_web.x5.X5WebView
+                android:id="@+id/sign_webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F8F8F8"
+                binding:webUrl="@{viewModel.url}" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <!-- -->
+        <com.qm.lib.widget.toolbar.JYToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/status_bar_top"
+            android:background="?attr/colorPrimaryDark"
+            android:fitsSystemWindows="true"
+            android:minHeight="?android:attr/actionBarSize"
+            android:visibility="visible"
+            app:onBackClick="@{viewModel.onBackClick}"
+            app:onCloseClick="@{viewModel.onCloseClick}"
+            app:onRightClick="@{viewModel.onRightClick}"
+            app:toolbarOptions="@{viewModel.toolbarOptions}" />
+    </RelativeLayout>
+
+</layout>

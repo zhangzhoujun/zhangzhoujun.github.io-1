@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/download_layout"
+    android:layout_width="@dimen/dp_300"
+    android:layout_height="@dimen/dp_164"
+    android:layout_centerInParent="true"
+    android:background="@drawable/lib_base_download_bg"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/down_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:minHeight="@dimen/dp_23"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:singleLine="true"
+        android:textColor="@color/c_333333"
+        android:textSize="@dimen/sp_16" />
+
+    <ProgressBar
+        android:id="@+id/down_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2_5"
+        android:layout_below="@+id/down_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_35"
+        android:progressDrawable="@drawable/web_download_progressbar" />
+
+    <TextView
+        android:id="@+id/down_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/down_progress"
+        android:layout_alignRight="@+id/down_progress"
+        android:layout_marginTop="@dimen/dp_8"
+        android:minHeight="@dimen/dp_20"
+        android:textColor="#99000000"
+        android:textSize="@dimen/sp_14" />
+
+    <com.qm.lib.widget.dim.AppImageView
+        android:id="@+id/down_icon"
+        android:layout_width="@dimen/dp_21"
+        android:layout_height="@dimen/dp_21"
+        android:layout_below="@+id/down_progress"
+        android:layout_marginLeft="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_7_5"
+        android:background="@drawable/web_download_icon" />
+
+    <TextView
+        android:id="@+id/down_icon_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/down_progress"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/dp_2_5"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_toRightOf="@+id/down_icon"
+        android:minHeight="@dimen/dp_20"
+        android:text="下载中"
+        android:textColor="#CC333333"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/down_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/down_icon"
+        android:layout_marginLeft="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_8"
+        android:minHeight="@dimen/dp_16"
+        android:text="离开当前页面可能会导致下载失败"
+        android:textColor="#FF999999"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/down_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/down_des"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:minHeight="@dimen/dp_16"
+        android:text="取消下载"
+        android:textColor="#FF1AA3FF"
+        android:textSize="@dimen/sp_16" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:layout_below="@+id/down_cancel"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

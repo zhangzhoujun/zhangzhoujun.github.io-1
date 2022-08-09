@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/dp_268"
+        android:layout_height="@dimen/dp_131">
+
+        <com.qm.lib.widget.dim.AppImageView
+            android:layout_width="@dimen/dp_268"
+            android:layout_height="@dimen/dp_93"
+            android:background="@mipmap/qm_dialog_ibxapp_top" />
+
+        <com.qm.lib.widget.dim.AppImageView
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/dp_134"
+            android:layout_height="@dimen/dp_38"
+            android:layout_marginTop="@dimen/dp_93"
+            android:background="@mipmap/qm_dialog_ibxapp_left" />
+
+        <com.qm.lib.widget.dim.AppImageView
+            android:id="@+id/sure"
+            android:layout_width="@dimen/dp_134"
+            android:layout_height="@dimen/dp_38"
+            android:layout_marginLeft="@dimen/dp_134"
+            android:layout_marginTop="@dimen/dp_93"
+            android:background="@mipmap/qm_dialog_ibxapp_right" />
+
+    </RelativeLayout>
+</layout>

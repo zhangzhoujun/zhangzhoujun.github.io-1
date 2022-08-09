@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.qm.module_umshare.ui.share.ShareMainViewModel" />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:binding="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.qm.lib.widget.toolbar.JYToolbar
+            android:id="@+id/toolbar"
+            style="@style/appToolbar"
+            app:onBackClick="@{viewModel.onBackClick}"
+            app:toolbarOptions="@{viewModel.toolbarOptions}" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_440">
+
+                    <RelativeLayout
+                        android:id="@+id/banner_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dp_9">
+
+                        <RelativeLayout
+                            android:id="@+id/banner_wid_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="@dimen/dp_56"
+                            android:layout_marginRight="@dimen/dp_56" />
+
+                        <com.youth.banner.Banner
+                            android:id="@+id/banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:banner_auto_loop="false"
+                            app:banner_infinite_loop="false" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginTop="@dimen/dp_1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/dp_64"
+                        android:layout_height="@dimen/dp_0_5"
+                        android:background="@color/c_999999" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingRight="@dimen/dp_10"
+                        android:text="分享到"
+                        android:textColor="@color/c_999999"
+                        android:textSize="@dimen/sp_14" />
+
+                    <View
+                        android:layout_width="@dimen/dp_64"
+                        android:layout_height="@dimen/dp_0_5"
+                        android:background="@color/c_999999" />
+                </LinearLayout>
+
+                <com.qm.lib.widget.refresh.JYRecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_25"
+                    binding:adapter="@{viewModel.adapter}"
+                    binding:itemBinding="@{viewModel.itemBinding}"
+                    binding:items="@{viewModel.observableList}" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0_5"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:background="#EEEEEE" />
+
+                <com.qm.lib.widget.dim.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:minHeight="@dimen/dp_20"
+                    android:text="说明："
+                    android:textColor="@color/c_999999"
+                    android:textSize="@dimen/sp_14" />
+
+                <com.qm.lib.widget.dim.AppTextView
+                    android:id="@+id/des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:lineSpacingExtra="@dimen/dp_6"
+                    android:minHeight="@dimen/dp_20"
+                    android:paddingBottom="@dimen/dp_30"
+                    android:textColor="@color/c_999999"
+                    android:textSize="@dimen/sp_14" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</layout>

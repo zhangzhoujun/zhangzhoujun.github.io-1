@@ -1,0 +1,270 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+//apply plugin: 'com.aliyun.ams.emas-services'
+//apply plugin: 'com.huawei.agconnect'
+//apply plugin: 'com.qm.plugin'
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+def baseConfig
+def appName = "健康派"
+def appType = "OL"
+
+def getQmConfig(String fileName) {
+    println("获取" + fileName + "start!")
+    File jsonFile = file(fileName)
+    def parsedJson = new groovy.json.JsonSlurper().parseText(jsonFile.text)
+    println("获取" + fileName + "end!")
+    return parsedJson
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+
+        println("开始 配置 ")
+        println("--获取基础配置 开始------------------------------")
+        baseConfig = getQmConfig("pontus-config-base.json")
+        println(baseConfig)
+        println("--获取基础配置 结束------------------------------")
+
+        println("--获取UM配置 开始------------------------------")
+        def umConfig = getQmConfig("pontus-config-um.json")
+        println(umConfig)
+        println("--获取UM配置 结束------------------------------")
+
+        println("--获取AD配置 开始------------------------------")
+        def adConfig = getQmConfig("pontus-config-ad.json")
+        println(adConfig)
+        println("--获取AD配置 结束------------------------------")
+        println("结束 配置 ")
+
+        applicationId baseConfig.packagename
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode baseConfig.version_code
+        versionName baseConfig.version_name
+        appName = baseConfig.app_name
+
+        manifestPlaceholders = [
+                appName                : baseConfig.app_name,
+                scheme_host            : baseConfig.scheme_host,
+                APP_ID                 : "QM_ID" + baseConfig.app_id,
+                APP_KEY                : "QM_ID" + baseConfig.app_key,
+                APP_SECRET             : "QM_ID" + baseConfig.app_secret,
+                show_guide             : "QM_ID" + baseConfig.show_guide,
+                BASE_SERVER_URL        : baseConfig.base_server_url,
+                BASE_WEB_URL           : baseConfig.base_web_url,
+
+                UMENG_APPKEY           : umConfig.appkey,
+                UMENG_CHANNEL_VALUE    : baseConfig.channel_name,
+                WX_APP_ID              : "QM_ID" + umConfig.wx_app_id,
+                WX_APP_SECRIT          : "QM_ID" + umConfig.wx_app_secrit,
+
+                AD_APPID               : "QM_ID" + adConfig.ad_appid,
+                CSJ_APPID              : "QM_ID" + adConfig.csj_appid,
+                GDT_APPID              : "QM_ID" + adConfig.gdt_appid,
+                KS_APPID               : "QM_ID" + adConfig.ks_appid,
+
+                qqappid                : "111",
+        ]
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        kapt {
+            generateStubs = true
+
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
+            }
+        }
+        //统一资源前缀，规范资源引用
+        resourcePrefix "qm_"
+
+        multiDexEnabled true
+
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+        lintOptions {
+            disable 'PrivateResource'
+            checkReleaseBuilds false
+            abortOnError false
+        }
+        packagingOptions {
+            // exclude 'META-INF/MANIFEST.MF'
+            doNotStrip "*/armeabi-v7a/*.so"
+            doNotStrip "*/x86/*.so"
+            doNotStrip "*/arm64-v8a/*.so"
+            doNotStrip "*/x86_64/*.so"
+            doNotStrip "armeabi.so"
+        }
+    }
+
+    signingConfigs {
+        chainValue {
+            storeFile file('../healthy.jks')
+            storePassword 'qy123123'
+            keyAlias 'healthy'
+            keyPassword 'qy123123'
+        }
+        debug {
+            storeFile file('../healthy.jks')
+            storePassword 'qy123123'
+            keyAlias 'healthy'
+            keyPassword 'qy123123'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    dataBinding {
+        enabled = true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    flavorDimensions "node"
+    productFlavors {
+        // 测试环境
+        develop {
+            appType = "TEST"
+
+            manifestPlaceholders = [
+                BASE_SERVER_URL        : baseConfig.base_server_url_test,
+                BASE_WEB_URL           : baseConfig.base_web_url_test,
+            ]
+        }
+        // 官方渠道APP
+        valuechain {
+            appType = "OL"
+
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            buildConfigField("boolean", "online", "true")
+            signingConfigs.chainValue
+
+            // 批量打包，使用 .\gradlew assemble 命令编译打包所有配置的包
+            android.applicationVariants.all {
+                variant ->
+                    variant.outputs.all {
+                        outputFileName = "${appName}_${variant.productFlavors[0].name}_v${defaultConfig.versionName}_${buildType.name}_${appType}_${releaseTime()}.apk"
+                    }
+            }
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            buildConfigField("boolean", "online", "false")
+            signingConfig signingConfigs.debug
+
+            signingConfigs.chainValue
+
+            // 批量打包，使用 .\gradlew assemble 命令编译打包所有配置的包
+            android.applicationVariants.all {
+                variant ->
+                    variant.outputs.all {
+                        outputFileName = "${appName}_${variant.productFlavors[0].name}_v${defaultConfig.versionName}_${appType}_${buildType.name}_${releaseTime()}.apk"
+                    }
+            }
+        }
+    }
+
+    compileOptions {
+        //指定java版本
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs', '../module_web/libs', '../module_watch/libs'
+        }
+    }
+}
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+//设置仓库凭证
+allprojects {
+    repositories {
+        maven {
+            credentials {
+                username 'rvxtfz'
+                password 'QBWaa4Fi8O'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2046311-release-HZhbV0/'
+        }
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    // 底部tabBar
+    api 'me.majiajie:pager-bottom-tab-strip:2.3.0'
+    implementation project(path: ':baselib')
+    kapt "com.android.databinding:compiler:3.6.3"
+
+    //阿里路由框架
+    api "com.alibaba:arouter-api:1.4.1"
+    //组件中依赖阿里路由编译框架
+    kapt "com.alibaba:arouter-compiler:1.2.2"
+    implementation 'com.youth.banner:banner:2.1.0'
+
+    implementation project(path: ':module_mine')
+    implementation project(path: ':module_juggle')
+    implementation project(path: ':module_login')
+    implementation project(path: ':module_umshare')
+    implementation project(path: ':module_school')
+    implementation project(path: ':module_common')
+    implementation project(path: ':module_version')
+    implementation project(path: ':module_web')
+    // implementation project(path: ':module_goods')
+
+    implementation 'com.arialyy.aria:core:3.8.10'  //必须
+    annotationProcessor 'com.arialyy.aria:compiler:3.8.10' //必须
+
+    implementation('com.touchxd.wreadsdk:wreadsdk:1.0.4.1') {
+        exclude group: 'com.tencent.mm.opensdk'
+    }
+
+    implementation(name: 'oaid_sdk_1.0.25', ext: 'aar')
+    implementation(name: 'GDTSDK.unionNormal.4.410.1280', ext: 'aar')
+    implementation(name: 'kssdk-all-3.3.23-publishRelease-b24448fc1', ext: 'aar')
+    implementation(name: 'open_ad_sdk_3.9.0.2', ext: 'aar')
+    implementation(name: 'QYSDK-v1.0.3', ext: 'aar')
+    implementation(name: 'sesdk1.2.8.1', ext: 'aar')
+    implementation(name: 'sspsdk1.0.8.1', ext: 'aar')
+
+}

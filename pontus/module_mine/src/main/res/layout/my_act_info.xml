@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.qy.module_mine.ui.info.InfoViewModel" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:binding="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.qm.lib.widget.toolbar.JYToolbar
+            android:id="@+id/toolbar"
+            style="@style/appToolbar"
+            app:onBackClick="@{viewModel.onBackClick}"
+            app:onRightClick="@{viewModel.onRightClick}"
+            app:toolbarOptions="@{viewModel.toolbarOptions}" />
+
+        <LinearLayout
+            android:id="@+id/info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="@{viewModel.showInfo ? View.VISIBLE : View.GONE}">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                binding:onClickCommand="@{viewModel.onHeadClick}">
+
+                <com.qm.lib.widget.dim.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:gravity="center"
+                    android:text="头像"
+                    android:textColor="@color/c_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <com.qm.lib.widget.dim.AppImageView
+                    iconRound="@{true}"
+                    placeId="@{@drawable/lib_default_head}"
+                    webUrl="@{viewModel.mHeadUrl}"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_20" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_5"
+                android:background="#EEEEEE" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                binding:onClickCommand="@{viewModel.onNicknameClick}">
+
+                <com.qm.lib.widget.dim.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:gravity="center"
+                    android:text="昵称"
+                    android:textColor="@color/c_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <com.qm.lib.widget.dim.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/my_mine_info_more"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/dp_15"
+                    android:text="@{viewModel.mNickName}"
+                    android:textColor="@color/c_999999"
+                    android:textSize="@dimen/sp_15" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_5"
+                android:background="#EEEEEE" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:visibility="gone"
+                binding:onClickCommand="@{viewModel.onEIDClick}">
+
+                <com.qm.lib.widget.dim.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:gravity="center"
+                    android:text="eID数字身份申领与开通"
+                    android:textColor="@color/c_333333"
+                    android:textSize="@dimen/sp_15" />
+
+                <com.qm.lib.widget.dim.AppImageView
+                    android:id="@+id/more"
+                    android:layout_width="@dimen/dp_11"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:background="@mipmap/my_mine_info_more" />
+
+                <com.qm.lib.widget.dim.AppImageView
+                    resId="@{@drawable/home_eid}"
+                    android:layout_width="@dimen/dp_42"
+                    android:layout_height="@dimen/dp_43"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_1_5"
+                    android:layout_toLeftOf="@+id/more" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0_5"
+                android:background="#EEEEEE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/modify_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="@{viewModel.showInfo ? View.GONE : View.VISIBLE}">
+
+            <com.qm.lib.widget.input.AppInput
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_20"
+                app:jyInputOptions="@{viewModel.nameOptions}" />
+
+            <com.qm.lib.widget.dim.DimButton
+                style="@style/style_text_white_18"
+                android:layout_width="@dimen/dp_290"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_77"
+                android:gravity="center"
+                android:text="确定"
+                app:canClick="@{true}"
+                binding:onClickCommand="@{viewModel.onModifyCLick}" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

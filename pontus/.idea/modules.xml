@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/brick_pontus.iml" filepath="$PROJECT_DIR$/.idea/modules/brick_pontus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildSrc/brick_pontus.BuildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/buildSrc/brick_pontus.BuildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/brick_pontus.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/brick_pontus.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/baselib/brick_pontus.baselib.iml" filepath="$PROJECT_DIR$/.idea/modules/baselib/brick_pontus.baselib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/brick_pontus.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/brick_pontus.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dimlib/brick_pontus.dimlib.iml" filepath="$PROJECT_DIR$/.idea/modules/dimlib/brick_pontus.dimlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_common/brick_pontus.module_common.iml" filepath="$PROJECT_DIR$/.idea/modules/module_common/brick_pontus.module_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_goods/brick_pontus.module_goods.iml" filepath="$PROJECT_DIR$/.idea/modules/module_goods/brick_pontus.module_goods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_juggle/brick_pontus.module_juggle.iml" filepath="$PROJECT_DIR$/.idea/modules/module_juggle/brick_pontus.module_juggle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_login/brick_pontus.module_login.iml" filepath="$PROJECT_DIR$/.idea/modules/module_login/brick_pontus.module_login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_mine/brick_pontus.module_mine.iml" filepath="$PROJECT_DIR$/.idea/modules/module_mine/brick_pontus.module_mine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_school/brick_pontus.module_school.iml" filepath="$PROJECT_DIR$/.idea/modules/module_school/brick_pontus.module_school.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_umshare/brick_pontus.module_umshare.iml" filepath="$PROJECT_DIR$/.idea/modules/module_umshare/brick_pontus.module_umshare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_version/brick_pontus.module_version.iml" filepath="$PROJECT_DIR$/.idea/modules/module_version/brick_pontus.module_version.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_web/brick_pontus.module_web.iml" filepath="$PROJECT_DIR$/.idea/modules/module_web/brick_pontus.module_web.iml" />
+    </modules>
+  </component>
+</project>

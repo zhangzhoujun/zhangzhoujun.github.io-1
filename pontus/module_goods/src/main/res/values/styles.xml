@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="goods_price_big">
+        <item name="android:textSize">@dimen/sp_25</item>
+    </style>
+
+    <style name="goods_price_small">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+</resources>

@@ -1,0 +1,36 @@
+apply from: "../module.build.gradle"
+apply plugin: 'kotlin-kapt'
+android {
+    defaultConfig {
+        //如果是独立模块，则使用当前组件的包名
+        if (isBuildModule.toBoolean()) {
+            applicationId "com.jy.home"
+        }
+    }
+    //统一资源前缀，规范资源引用
+    resourcePrefix "home_"
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //组件依赖基础库
+    api project(':baselib')
+    //组件中依赖阿里路由编译框架
+    kapt "com.alibaba:arouter-compiler:1.2.2"
+    api ('com.alibaba.android:vlayout:1.2.8@aar') {
+        transitive = true
+    }
+    
+    implementation 'com.github.zhpanvip:viewpagerindicator:1.0.4'
+
+    implementation 'com.youth.banner:banner:2.1.0'
+
+    implementation 'com.robinhood.ticker:ticker:1.0.1'
+
+    implementation 'cn.bingoogolapple:bga-qrcode-zbar:1.3.7'
+
+    implementation 'com.imusic.player:video-player:1.0.9'
+    implementation 'com.kunminx.linkage:linkage-recyclerview:2.2.3'
+}
+repositories {
+    mavenCentral()
+}

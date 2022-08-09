@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.qy.login.ui.login.LoginViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.qm.lib.widget.dim.AppImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_315"
+            android:background="@mipmap/login_act_bg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_188"
+            android:background="@drawable/login_act_bg" />
+
+        <com.qm.lib.widget.dim.AppTextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_26"
+            android:gravity="center"
+            android:minHeight="@dimen/dp_32"
+            android:text="WELCOME"
+            android:textColor="@color/node_text"
+            android:textSize="@dimen/sp_23"
+            app:layout_constraintTop_toTopOf="@+id/bg" />
+
+        <com.qm.lib.widget.dim.AppTextView
+            android:id="@+id/welcome_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="center"
+            android:minHeight="@dimen/dp_28"
+            android:text="登录/注册"
+            android:textColor="@color/node_text"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+        <com.qy.login.widget.input.UserInput
+            android:id="@+id/input_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_56"
+            android:layout_marginRight="@dimen/dp_10"
+            app:getLeftClick="@{viewModel.onLeftDesClick}"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_2"
+            app:userInputOptions="@{viewModel.mobileOptions}" />
+
+        <com.qy.login.widget.input.UserInput
+            android:id="@+id/input_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            app:getSmsClick="@{viewModel.onGetSmsClick}"
+            app:layout_constraintTop_toBottomOf="@+id/input_mobile"
+            app:userInputOptions="@{viewModel.codeOptions}" />
+
+        <com.qm.lib.widget.dim.DimButton
+            android:id="@+id/button"
+            android:layout_width="@dimen/dp_305"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_122"
+            android:layout_marginBottom="@dimen/dp_41"
+            android:onClick="@{viewModel.loginClick}"
+            android:text="登录/注册"
+            android:textSize="@dimen/sp_15"
+            android:visibility="@{viewModel.firstStep ? View.VISIBLE : View.GONE}"
+            app:canClick="@{viewModel.canSend}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/regiest_agree_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_36"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/button">
+
+            <com.qm.lib.widget.dim.AppImageView
+                resId="@{viewModel.doesAgree ? @drawable/login_rediest_chose : @drawable/login_rediest_unchose}"
+                android:layout_width="@dimen/dp_13"
+                android:layout_height="@dimen/dp_13"
+                android:onClick="@{viewModel.onAgreeClick}" />
+
+            <com.qmuiteam.qmui.widget.textview.QMUISpanTouchFixTextView
+                android:id="@+id/regiest_bottom"
+                style="@style/style_text_content_12"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_18"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:gravity="center"
+                android:text="@string/login_bottom_des"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:visibility="@{viewModel.firstStep ? View.GONE : View.VISIBLE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_80"
+                android:onClick="@{viewModel.onBackToFitstStep}">
+
+                <com.qm.lib.widget.dim.AppImageView
+                    android:layout_width="@dimen/dp_12"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginTop="@dimen/dp_40"
+                    android:background="@mipmap/lib_base_back" />
+
+            </RelativeLayout>
+
+            <com.qm.lib.widget.dim.AppTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_3"
+                android:text="邀请码"
+                android:textColor="@color/c_333333"
+                android:textSize="@dimen/sp_25"
+                android:textStyle="bold" />
+
+            <com.qy.login.widget.input.UserInput
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_10"
+                app:layout_constraintTop_toBottomOf="@+id/input_mobile"
+                app:userInputOptions="@{viewModel.invitationOptions}" />
+
+            <com.qm.lib.widget.dim.DimButton
+                android:layout_width="@dimen/dp_305"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_93"
+                android:layout_marginBottom="@dimen/dp_41"
+                android:onClick="@{viewModel.onInvitationClick}"
+                android:text="登录/注册"
+                android:textSize="@dimen/sp_15"
+                app:canClick="@{viewModel.canInvit}" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

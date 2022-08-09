@@ -1,0 +1,1173 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F233881276C7CEF00AFAA34 /* img_loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F233880276C7CEF00AFAA34 /* img_loading.png */; };
+		7F2A0F1F2750B89D00F32709 /* JuggleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A0F1E2750B89D00F32709 /* JuggleVC.swift */; };
+		7F2A0F222750BE8000F32709 /* UCollectionViewAlignedLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A0F212750BE8000F32709 /* UCollectionViewAlignedLayout.swift */; };
+		7F2A0F242750BE9D00F32709 /* UCollectionViewSectionBackgroundLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A0F232750BE9D00F32709 /* UCollectionViewSectionBackgroundLayout.swift */; };
+		7F2A0F272750CB5A00F32709 /* JuggleCollectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A0F262750CB5A00F32709 /* JuggleCollectionFooterView.swift */; };
+		7F2A0F292750CB9100F32709 /* JuggleCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A0F282750CB9100F32709 /* JuggleCollectionHeaderView.swift */; };
+		7F2A0F2C2750CBE000F32709 /* UEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A0F2B2750CBE000F32709 /* UEmptyDataSet.swift */; };
+		7F2A0F2E2750CC5300F32709 /* JuggleCollectionPicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A0F2D2750CC5300F32709 /* JuggleCollectionPicViewCell.swift */; };
+		7F2A0F302750D92B00F32709 /* JuggleMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A0F2F2750D92B00F32709 /* JuggleMainModel.swift */; };
+		7F2A0F342754AE5C00F32709 /* JuggleCollectionDIYViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A0F332754AE5C00F32709 /* JuggleCollectionDIYViewCell.swift */; };
+		7F2A0F362754C55D00F32709 /* JuggleCollectionLoginViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A0F352754C55D00F32709 /* JuggleCollectionLoginViewCell.swift */; };
+		7F2A0F3A2757550800F32709 /* JuggleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A0F392757550800F32709 /* JuggleManager.swift */; };
+		7F38FC02276052C300E14CA1 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F38FC01276052C300E14CA1 /* iconfont.ttf */; };
+		7F38FC042760719500E14CA1 /* DSImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38FC032760719500E14CA1 /* DSImageUploader.swift */; };
+		7F38FC0827632C8800E14CA1 /* PontusConfigUm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38FC0727632C8800E14CA1 /* PontusConfigUm.swift */; };
+		7F38FC0A27632D0400E14CA1 /* PontusConfigAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F38FC0927632D0400E14CA1 /* PontusConfigAd.swift */; };
+		7F4F4A49275F96E5006DC9E3 /* SelfInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4F4A48275F96E5006DC9E3 /* SelfInfoVC.swift */; };
+		7F94DA192757647400D46F4F /* DToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94DA182757647400D46F4F /* DToast.swift */; };
+		7F94DA2027587CA200D46F4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94DA1F27587CA200D46F4F /* AppDelegate.swift */; };
+		7F95A74B27510BAD000EF648 /* JuggleCollectionBannerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95A74A27510BAD000EF648 /* JuggleCollectionBannerViewCell.swift */; };
+		7F95A74D2751111C000EF648 /* JuggleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95A74C2751111C000EF648 /* JuggleType.swift */; };
+		7F95A74F275114E5000EF648 /* JuggleCollectionGoodViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95A74E275114E5000EF648 /* JuggleCollectionGoodViewCell.swift */; };
+		7F95A754275399B7000EF648 /* JuggleCollectionHSViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95A753275399B7000EF648 /* JuggleCollectionHSViewCell.swift */; };
+		7F95A7562753A617000EF648 /* JuggleCollectionHSVCViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95A7552753A617000EF648 /* JuggleCollectionHSVCViewCell.swift */; };
+		7F95A7632757A2CC000EF648 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F95A7622757A2CC000EF648 /* UserModel.swift */; };
+		7F9D1F9C274C9ADC00D2A216 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1F9B274C9ADC00D2A216 /* ViewController.swift */; };
+		7F9D1F9F274C9ADC00D2A216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F9D1F9D274C9ADC00D2A216 /* Main.storyboard */; };
+		7F9D1FA1274C9AE000D2A216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F9D1FA0274C9AE000D2A216 /* Assets.xcassets */; };
+		7F9D1FA4274C9AE000D2A216 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F9D1FA2274C9AE000D2A216 /* LaunchScreen.storyboard */; };
+		7F9D1FAF274C9AE000D2A216 /* PontusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FAE274C9AE000D2A216 /* PontusTests.swift */; };
+		7F9D1FB9274C9AE000D2A216 /* PontusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FB8274C9AE000D2A216 /* PontusUITests.swift */; };
+		7F9D1FBB274C9AE000D2A216 /* PontusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FBA274C9AE000D2A216 /* PontusUITestsLaunchTests.swift */; };
+		7F9D1FCB274CD7B200D2A216 /* UNoticeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FCA274CD7B200D2A216 /* UNoticeBar.swift */; };
+		7F9D1FD0274CDBD800D2A216 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FCF274CDBD800D2A216 /* BaseController.swift */; };
+		7F9D1FD2274CDC0C00D2A216 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FD1274CDC0C00D2A216 /* Global.swift */; };
+		7F9D1FD4274CDD7500D2A216 /* NaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FD3274CDD7500D2A216 /* NaviController.swift */; };
+		7F9D1FD7274CDF0F00D2A216 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FD6274CDF0F00D2A216 /* UIColorExtension.swift */; };
+		7F9D1FD9274CE09800D2A216 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FD8274CE09800D2A216 /* ArrayExtensions.swift */; };
+		7F9D1FDB274CE0BE00D2A216 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FDA274CE0BE00D2A216 /* UIViewExtension.swift */; };
+		7F9D1FDD274CE0DC00D2A216 /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FDC274CE0DC00D2A216 /* UIBarButtonItemExtension.swift */; };
+		7F9D1FDF274CE0F500D2A216 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FDE274CE0F500D2A216 /* UIDeviceExtension.swift */; };
+		7F9D1FE1274CE11100D2A216 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FE0274CE11100D2A216 /* UIImageExtensions.swift */; };
+		7F9D1FE3274CE13300D2A216 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FE2274CE13300D2A216 /* DispatchQueueExtension.swift */; };
+		7F9D1FE5274CE14800D2A216 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FE4274CE14800D2A216 /* StringExtension.swift */; };
+		7F9D1FE7274CE15D00D2A216 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FE6274CE15D00D2A216 /* DictionaryExtension.swift */; };
+		7F9D1FEA274CE19700D2A216 /* URefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FE9274CE19700D2A216 /* URefresh.swift */; };
+		7F9D1FEC274CE21300D2A216 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FEB274CE21300D2A216 /* WebViewController.swift */; };
+		7F9D1FEF274CE27C00D2A216 /* SegmentMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FEE274CE27C00D2A216 /* SegmentMainController.swift */; };
+		7F9D1FF1274CE30D00D2A216 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FF0274CE30D00D2A216 /* LoadingVC.swift */; };
+		7F9D1FFE274CEBCA00D2A216 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D1FFD274CEBCA00D2A216 /* DateExtension.swift */; };
+		7F9D2002274CEC8100D2A216 /* AppConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D2001274CEC8100D2A216 /* AppConfigModel.swift */; };
+		7F9D2008274CF66D00D2A216 /* DimRuntimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D2007274CF66D00D2A216 /* DimRuntimeData.swift */; };
+		7F9D200A274CF6B900D2A216 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D2009274CF6B900D2A216 /* AppPreferences.swift */; };
+		7F9D200C274CF6ED00D2A216 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D200B274CF6ED00D2A216 /* OnBoarding.swift */; };
+		7F9D200E274CF71400D2A216 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D200D274CF71400D2A216 /* AppRouter.swift */; };
+		7F9D2023274F736600D2A216 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D2022274F736600D2A216 /* Config.swift */; };
+		7FA7D547276B2B9C00319D5B /* MineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA7D546276B2B9C00319D5B /* MineVC.swift */; };
+		7FDB3E16275F48C30033239D /* SetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDB3E15275F48C30033239D /* SetVC.swift */; };
+		7FDB3E18275F6C720033239D /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDB3E17275F6C720033239D /* AboutVC.swift */; };
+		7FECB421276351B8000C923D /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FECB420276351B8000C923D /* GuideVC.swift */; };
+		7FECB42C27635942000C923D /* GuidePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FECB42B27635942000C923D /* GuidePageView.swift */; };
+		7FECB42F276359E7000C923D /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FECB42E276359E7000C923D /* PageControl.swift */; };
+		7FECB43127635A18000C923D /* GifImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FECB43027635A18000C923D /* GifImageOperation.swift */; };
+		7FECB43927683F46000C923D /* UMAnalyticsSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FECB43827683F46000C923D /* UMAnalyticsSwift.swift */; };
+		7FECB43B27683F5B000C923D /* UMCommonSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FECB43A27683F5B000C923D /* UMCommonSwift.swift */; };
+		7FECB43D27683F6D000C923D /* UMCommonLogSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FECB43C27683F6D000C923D /* UMCommonLogSwift.swift */; };
+		7FF3235D274E6AD90004515A /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3235C274E6AD90004515A /* RequestManager.swift */; };
+		7FF3235F274E6B3E0004515A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3235E274E6B3E0004515A /* API.swift */; };
+		7FF32362274E6B810004515A /* PontusConfigBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF32361274E6B810004515A /* PontusConfigBase.swift */; };
+		7FF32365274E6E050004515A /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF32364274E6E050004515A /* BaseTableViewCell.swift */; };
+		7FF32367274E6E220004515A /* BaseCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF32366274E6E220004515A /* BaseCollectionReusableView.swift */; };
+		7FF32369274E6E410004515A /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF32368274E6E410004515A /* BaseCollectionViewCell.swift */; };
+		7FF3236B274E6E580004515A /* BaseTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3236A274E6E580004515A /* BaseTableViewHeaderFooterView.swift */; };
+		7FF3236D274E71070004515A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3236C274E71070004515A /* TabBarController.swift */; };
+		924264CA6BD29ACDC56A7358 /* Pods_Pontus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA39B37031A57D1FBA7B1186 /* Pods_Pontus.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F9D1FAB274C9AE000D2A216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F9D1F8C274C9ADC00D2A216 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F9D1F93274C9ADC00D2A216;
+			remoteInfo = Pontus;
+		};
+		7F9D1FB5274C9AE000D2A216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F9D1F8C274C9ADC00D2A216 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F9D1F93274C9ADC00D2A216;
+			remoteInfo = Pontus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E1D0F1107C02F89DF3A2E41 /* Pods-Pontus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pontus.release.xcconfig"; path = "Target Support Files/Pods-Pontus/Pods-Pontus.release.xcconfig"; sourceTree = "<group>"; };
+		7784EEA6E1EDF121FF6D5D5A /* Pods-Pontus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pontus.debug.xcconfig"; path = "Target Support Files/Pods-Pontus/Pods-Pontus.debug.xcconfig"; sourceTree = "<group>"; };
+		7F233880276C7CEF00AFAA34 /* img_loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_loading.png; sourceTree = "<group>"; };
+		7F2A0F1E2750B89D00F32709 /* JuggleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuggleVC.swift; sourceTree = "<group>"; };
+		7F2A0F212750BE8000F32709 /* UCollectionViewAlignedLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCollectionViewAlignedLayout.swift; sourceTree = "<group>"; };
+		7F2A0F232750BE9D00F32709 /* UCollectionViewSectionBackgroundLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCollectionViewSectionBackgroundLayout.swift; sourceTree = "<group>"; };
+		7F2A0F262750CB5A00F32709 /* JuggleCollectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuggleCollectionFooterView.swift; sourceTree = "<group>"; };
+		7F2A0F282750CB9100F32709 /* JuggleCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuggleCollectionHeaderView.swift; sourceTree = "<group>"; };
+		7F2A0F2B2750CBE000F32709 /* UEmptyDataSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEmptyDataSet.swift; sourceTree = "<group>"; };
+		7F2A0F2D2750CC5300F32709 /* JuggleCollectionPicViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuggleCollectionPicViewCell.swift; sourceTree = "<group>"; };
+		7F2A0F2F2750D92B00F32709 /* JuggleMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuggleMainModel.swift; sourceTree = "<group>"; };
+		7F2A0F332754AE5C00F32709 /* JuggleCollectionDIYViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuggleCollectionDIYViewCell.swift; sourceTree = "<group>"; };
+		7F2A0F352754C55D00F32709 /* JuggleCollectionLoginViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuggleCollectionLoginViewCell.swift; sourceTree = "<group>"; };
+		7F2A0F392757550800F32709 /* JuggleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuggleManager.swift; sourceTree = "<group>"; };
+		7F38FC01276052C300E14CA1 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = iconfont.ttf; path = ../../../../../../Downloads/font_2977861_3v7015l5yuy/iconfont.ttf; sourceTree = "<group>"; };
+		7F38FC032760719500E14CA1 /* DSImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSImageUploader.swift; sourceTree = "<group>"; };
+		7F38FC0727632C8800E14CA1 /* PontusConfigUm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontusConfigUm.swift; sourceTree = "<group>"; };
+		7F38FC0927632D0400E14CA1 /* PontusConfigAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontusConfigAd.swift; sourceTree = "<group>"; };
+		7F4F4A48275F96E5006DC9E3 /* SelfInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfInfoVC.swift; sourceTree = "<group>"; };
+		7F94DA182757647400D46F4F /* DToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DToast.swift; sourceTree = "<group>"; };
+		7F94DA1F27587CA200D46F4F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7F95A74A27510BAD000EF648 /* JuggleCollectionBannerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuggleCollectionBannerViewCell.swift; sourceTree = "<group>"; };
+		7F95A74C2751111C000EF648 /* JuggleType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuggleType.swift; sourceTree = "<group>"; };
+		7F95A74E275114E5000EF648 /* JuggleCollectionGoodViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuggleCollectionGoodViewCell.swift; sourceTree = "<group>"; };
+		7F95A753275399B7000EF648 /* JuggleCollectionHSViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuggleCollectionHSViewCell.swift; sourceTree = "<group>"; };
+		7F95A7552753A617000EF648 /* JuggleCollectionHSVCViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuggleCollectionHSVCViewCell.swift; sourceTree = "<group>"; };
+		7F95A7622757A2CC000EF648 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		7F9D1F94274C9ADC00D2A216 /* Pontus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pontus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F9D1F9B274C9ADC00D2A216 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F9D1F9E274C9ADC00D2A216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F9D1FA0274C9AE000D2A216 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F9D1FA3274C9AE000D2A216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F9D1FA5274C9AE000D2A216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F9D1FAA274C9AE000D2A216 /* PontusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PontusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F9D1FAE274C9AE000D2A216 /* PontusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontusTests.swift; sourceTree = "<group>"; };
+		7F9D1FB4274C9AE000D2A216 /* PontusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PontusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F9D1FB8274C9AE000D2A216 /* PontusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontusUITests.swift; sourceTree = "<group>"; };
+		7F9D1FBA274C9AE000D2A216 /* PontusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7F9D1FCA274CD7B200D2A216 /* UNoticeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNoticeBar.swift; sourceTree = "<group>"; };
+		7F9D1FCF274CDBD800D2A216 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		7F9D1FD1274CDC0C00D2A216 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		7F9D1FD3274CDD7500D2A216 /* NaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviController.swift; sourceTree = "<group>"; };
+		7F9D1FD6274CDF0F00D2A216 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		7F9D1FD8274CE09800D2A216 /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		7F9D1FDA274CE0BE00D2A216 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		7F9D1FDC274CE0DC00D2A216 /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
+		7F9D1FDE274CE0F500D2A216 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		7F9D1FE0274CE11100D2A216 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		7F9D1FE2274CE13300D2A216 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
+		7F9D1FE4274CE14800D2A216 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		7F9D1FE6274CE15D00D2A216 /* DictionaryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		7F9D1FE9274CE19700D2A216 /* URefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URefresh.swift; sourceTree = "<group>"; };
+		7F9D1FEB274CE21300D2A216 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		7F9D1FEE274CE27C00D2A216 /* SegmentMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentMainController.swift; sourceTree = "<group>"; };
+		7F9D1FF0274CE30D00D2A216 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
+		7F9D1FFD274CEBCA00D2A216 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		7F9D2001274CEC8100D2A216 /* AppConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigModel.swift; sourceTree = "<group>"; };
+		7F9D2007274CF66D00D2A216 /* DimRuntimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimRuntimeData.swift; sourceTree = "<group>"; };
+		7F9D2009274CF6B900D2A216 /* AppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
+		7F9D200B274CF6ED00D2A216 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		7F9D200D274CF71400D2A216 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		7F9D2022274F736600D2A216 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		7FA7D543276B26D500319D5B /* pontus-config-ad.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pontus-config-ad.geojson"; sourceTree = "<group>"; };
+		7FA7D544276B273200319D5B /* pontus-config-base.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pontus-config-base.geojson"; sourceTree = "<group>"; };
+		7FA7D545276B27B600319D5B /* pontus-config-um.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pontus-config-um.geojson"; sourceTree = "<group>"; };
+		7FA7D546276B2B9C00319D5B /* MineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineVC.swift; sourceTree = "<group>"; };
+		7FDB3E15275F48C30033239D /* SetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVC.swift; sourceTree = "<group>"; };
+		7FDB3E17275F6C720033239D /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		7FECB420276351B8000C923D /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
+		7FECB42B27635942000C923D /* GuidePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidePageView.swift; sourceTree = "<group>"; };
+		7FECB42E276359E7000C923D /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		7FECB43027635A18000C923D /* GifImageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImageOperation.swift; sourceTree = "<group>"; };
+		7FECB43627683D24000C923D /* Pontus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pontus-Bridging-Header.h"; sourceTree = "<group>"; };
+		7FECB43827683F46000C923D /* UMAnalyticsSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMAnalyticsSwift.swift; sourceTree = "<group>"; };
+		7FECB43A27683F5B000C923D /* UMCommonSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMCommonSwift.swift; sourceTree = "<group>"; };
+		7FECB43C27683F6D000C923D /* UMCommonLogSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMCommonLogSwift.swift; sourceTree = "<group>"; };
+		7FF3235C274E6AD90004515A /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		7FF3235E274E6B3E0004515A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		7FF32361274E6B810004515A /* PontusConfigBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontusConfigBase.swift; sourceTree = "<group>"; };
+		7FF32364274E6E050004515A /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		7FF32366274E6E220004515A /* BaseCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionReusableView.swift; sourceTree = "<group>"; };
+		7FF32368274E6E410004515A /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		7FF3236A274E6E580004515A /* BaseTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		7FF3236C274E71070004515A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		AA39B37031A57D1FBA7B1186 /* Pods_Pontus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pontus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F9D1F91274C9ADC00D2A216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924264CA6BD29ACDC56A7358 /* Pods_Pontus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F9D1FA7274C9AE000D2A216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F9D1FB1274C9AE000D2A216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D108A1E0CAA16EFAAC40AB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA39B37031A57D1FBA7B1186 /* Pods_Pontus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F29E94F276C722000172673 /* Img */ = {
+			isa = PBXGroup;
+			children = (
+				7F233880276C7CEF00AFAA34 /* img_loading.png */,
+			);
+			path = Img;
+			sourceTree = "<group>";
+		};
+		7F2A0F1D2750B86E00F32709 /* Juggle */ = {
+			isa = PBXGroup;
+			children = (
+				7F2A0F252750CB4800F32709 /* View */,
+				7F2A0F1E2750B89D00F32709 /* JuggleVC.swift */,
+				7F95A74C2751111C000EF648 /* JuggleType.swift */,
+				7F2A0F392757550800F32709 /* JuggleManager.swift */,
+			);
+			path = Juggle;
+			sourceTree = "<group>";
+		};
+		7F2A0F202750BE6E00F32709 /* CollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				7F2A0F212750BE8000F32709 /* UCollectionViewAlignedLayout.swift */,
+				7F2A0F232750BE9D00F32709 /* UCollectionViewSectionBackgroundLayout.swift */,
+			);
+			path = CollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		7F2A0F252750CB4800F32709 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7F2A0F262750CB5A00F32709 /* JuggleCollectionFooterView.swift */,
+				7F2A0F282750CB9100F32709 /* JuggleCollectionHeaderView.swift */,
+				7F2A0F2D2750CC5300F32709 /* JuggleCollectionPicViewCell.swift */,
+				7F95A74A27510BAD000EF648 /* JuggleCollectionBannerViewCell.swift */,
+				7F95A74E275114E5000EF648 /* JuggleCollectionGoodViewCell.swift */,
+				7F95A753275399B7000EF648 /* JuggleCollectionHSViewCell.swift */,
+				7F95A7552753A617000EF648 /* JuggleCollectionHSVCViewCell.swift */,
+				7F2A0F332754AE5C00F32709 /* JuggleCollectionDIYViewCell.swift */,
+				7F2A0F352754C55D00F32709 /* JuggleCollectionLoginViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7F2A0F2A2750CBCE00F32709 /* EmptyDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				7F2A0F2B2750CBE000F32709 /* UEmptyDataSet.swift */,
+			);
+			path = EmptyDataSet;
+			sourceTree = "<group>";
+		};
+		7F94DA1A2758641200D46F4F /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				7F38FC01276052C300E14CA1 /* iconfont.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		7F9D1F8B274C9ADC00D2A216 = {
+			isa = PBXGroup;
+			children = (
+				7F9D1F96274C9ADC00D2A216 /* Pontus */,
+				7F9D1FAD274C9AE000D2A216 /* PontusTests */,
+				7F9D1FB7274C9AE000D2A216 /* PontusUITests */,
+				7F9D1F95274C9ADC00D2A216 /* Products */,
+				DCFD6803B1809099BE555C32 /* Pods */,
+				5D108A1E0CAA16EFAAC40AB2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7F9D1F95274C9ADC00D2A216 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F9D1F94274C9ADC00D2A216 /* Pontus.app */,
+				7F9D1FAA274C9AE000D2A216 /* PontusTests.xctest */,
+				7F9D1FB4274C9AE000D2A216 /* PontusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F9D1F96274C9ADC00D2A216 /* Pontus */ = {
+			isa = PBXGroup;
+			children = (
+				7F29E94F276C722000172673 /* Img */,
+				7FA7D542276B268B00319D5B /* Config */,
+				7FECB43727683F28000C923D /* UMSwift */,
+				7F94DA1A2758641200D46F4F /* Font */,
+				7F9D1FF7274CEADF00D2A216 /* Model */,
+				7F9D1FCC274CDA8100D2A216 /* Controller */,
+				7F9D1FC9274CD78D00D2A216 /* Common */,
+				7F9D1FC7274CD6EA00D2A216 /* Other */,
+				7F9D1F9D274C9ADC00D2A216 /* Main.storyboard */,
+				7F9D1FA0274C9AE000D2A216 /* Assets.xcassets */,
+				7F9D1FA2274C9AE000D2A216 /* LaunchScreen.storyboard */,
+				7F9D1FA5274C9AE000D2A216 /* Info.plist */,
+				7FECB43627683D24000C923D /* Pontus-Bridging-Header.h */,
+			);
+			path = Pontus;
+			sourceTree = "<group>";
+		};
+		7F9D1FAD274C9AE000D2A216 /* PontusTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F9D1FAE274C9AE000D2A216 /* PontusTests.swift */,
+			);
+			path = PontusTests;
+			sourceTree = "<group>";
+		};
+		7F9D1FB7274C9AE000D2A216 /* PontusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F9D1FB8274C9AE000D2A216 /* PontusUITests.swift */,
+				7F9D1FBA274C9AE000D2A216 /* PontusUITestsLaunchTests.swift */,
+			);
+			path = PontusUITests;
+			sourceTree = "<group>";
+		};
+		7F9D1FC7274CD6EA00D2A216 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				7F94DA1F27587CA200D46F4F /* AppDelegate.swift */,
+				7F9D1F9B274C9ADC00D2A216 /* ViewController.swift */,
+				7F9D1FD1274CDC0C00D2A216 /* Global.swift */,
+				7F9D2007274CF66D00D2A216 /* DimRuntimeData.swift */,
+				7F9D2009274CF6B900D2A216 /* AppPreferences.swift */,
+				7F9D200B274CF6ED00D2A216 /* OnBoarding.swift */,
+				7F9D200D274CF71400D2A216 /* AppRouter.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		7F9D1FC8274CD76900D2A216 /* NoticeBar */ = {
+			isa = PBXGroup;
+			children = (
+				7F9D1FCA274CD7B200D2A216 /* UNoticeBar.swift */,
+				7F94DA182757647400D46F4F /* DToast.swift */,
+			);
+			path = NoticeBar;
+			sourceTree = "<group>";
+		};
+		7F9D1FC9274CD78D00D2A216 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7F2A0F2A2750CBCE00F32709 /* EmptyDataSet */,
+				7F2A0F202750BE6E00F32709 /* CollectionViewLayout */,
+				7FF32360274E6B6C0004515A /* Utils */,
+				7FF3235B274E6A950004515A /* Http */,
+				7F9D1FE8274CE18400D2A216 /* Refresh */,
+				7F9D1FD5274CDEF000D2A216 /* Extension */,
+				7F9D1FC8274CD76900D2A216 /* NoticeBar */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7F9D1FCC274CDA8100D2A216 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7FDB3E14275F48A20033239D /* Info */,
+				7F2A0F1D2750B86E00F32709 /* Juggle */,
+				7F9D1FCE274CDBCA00D2A216 /* Main */,
+				7F9D1FCD274CDA9200D2A216 /* Loading */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7F9D1FCD274CDA9200D2A216 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				7FECB42D276359C3000C923D /* View */,
+				7F9D1FF0274CE30D00D2A216 /* LoadingVC.swift */,
+				7FECB420276351B8000C923D /* GuideVC.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		7F9D1FCE274CDBCA00D2A216 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7FF32363274E6DEF0004515A /* BaseView */,
+				7F9D1FCF274CDBD800D2A216 /* BaseController.swift */,
+				7F9D1FD3274CDD7500D2A216 /* NaviController.swift */,
+				7F9D1FEB274CE21300D2A216 /* WebViewController.swift */,
+				7F9D1FEE274CE27C00D2A216 /* SegmentMainController.swift */,
+				7FF3236C274E71070004515A /* TabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7F9D1FD5274CDEF000D2A216 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7F9D1FD6274CDF0F00D2A216 /* UIColorExtension.swift */,
+				7F9D1FD8274CE09800D2A216 /* ArrayExtensions.swift */,
+				7F9D1FDA274CE0BE00D2A216 /* UIViewExtension.swift */,
+				7F9D1FDC274CE0DC00D2A216 /* UIBarButtonItemExtension.swift */,
+				7F9D1FDE274CE0F500D2A216 /* UIDeviceExtension.swift */,
+				7F9D1FE0274CE11100D2A216 /* UIImageExtensions.swift */,
+				7F9D1FE2274CE13300D2A216 /* DispatchQueueExtension.swift */,
+				7F9D1FE4274CE14800D2A216 /* StringExtension.swift */,
+				7F9D1FE6274CE15D00D2A216 /* DictionaryExtension.swift */,
+				7F9D1FFD274CEBCA00D2A216 /* DateExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7F9D1FE8274CE18400D2A216 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				7F9D1FE9274CE19700D2A216 /* URefresh.swift */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		7F9D1FF7274CEADF00D2A216 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F9D2001274CEC8100D2A216 /* AppConfigModel.swift */,
+				7F2A0F2F2750D92B00F32709 /* JuggleMainModel.swift */,
+				7F95A7622757A2CC000EF648 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7FA7D542276B268B00319D5B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				7FA7D543276B26D500319D5B /* pontus-config-ad.geojson */,
+				7FA7D544276B273200319D5B /* pontus-config-base.geojson */,
+				7FA7D545276B27B600319D5B /* pontus-config-um.geojson */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		7FDB3E14275F48A20033239D /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				7FDB3E15275F48C30033239D /* SetVC.swift */,
+				7FDB3E17275F6C720033239D /* AboutVC.swift */,
+				7F4F4A48275F96E5006DC9E3 /* SelfInfoVC.swift */,
+				7FA7D546276B2B9C00319D5B /* MineVC.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		7FECB42D276359C3000C923D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FECB42B27635942000C923D /* GuidePageView.swift */,
+				7FECB42E276359E7000C923D /* PageControl.swift */,
+				7FECB43027635A18000C923D /* GifImageOperation.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7FECB43727683F28000C923D /* UMSwift */ = {
+			isa = PBXGroup;
+			children = (
+				7FECB43827683F46000C923D /* UMAnalyticsSwift.swift */,
+				7FECB43A27683F5B000C923D /* UMCommonSwift.swift */,
+				7FECB43C27683F6D000C923D /* UMCommonLogSwift.swift */,
+			);
+			path = UMSwift;
+			sourceTree = "<group>";
+		};
+		7FF3235B274E6A950004515A /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				7FF3235C274E6AD90004515A /* RequestManager.swift */,
+				7FF3235E274E6B3E0004515A /* API.swift */,
+				7F38FC032760719500E14CA1 /* DSImageUploader.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		7FF32360274E6B6C0004515A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7FF32361274E6B810004515A /* PontusConfigBase.swift */,
+				7F9D2022274F736600D2A216 /* Config.swift */,
+				7F38FC0727632C8800E14CA1 /* PontusConfigUm.swift */,
+				7F38FC0927632D0400E14CA1 /* PontusConfigAd.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7FF32363274E6DEF0004515A /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				7FF32364274E6E050004515A /* BaseTableViewCell.swift */,
+				7FF32366274E6E220004515A /* BaseCollectionReusableView.swift */,
+				7FF32368274E6E410004515A /* BaseCollectionViewCell.swift */,
+				7FF3236A274E6E580004515A /* BaseTableViewHeaderFooterView.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		DCFD6803B1809099BE555C32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7784EEA6E1EDF121FF6D5D5A /* Pods-Pontus.debug.xcconfig */,
+				2E1D0F1107C02F89DF3A2E41 /* Pods-Pontus.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F9D1F93274C9ADC00D2A216 /* Pontus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F9D1FBE274C9AE000D2A216 /* Build configuration list for PBXNativeTarget "Pontus" */;
+			buildPhases = (
+				C8B33D3185403ECBE331F46F /* [CP] Check Pods Manifest.lock */,
+				7F9D1F90274C9ADC00D2A216 /* Sources */,
+				7F9D1F91274C9ADC00D2A216 /* Frameworks */,
+				7F9D1F92274C9ADC00D2A216 /* Resources */,
+				FF27609701CA40FB32750FE5 /* [CP] Embed Pods Frameworks */,
+				DCC640A43DE43B2538D6237A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pontus;
+			productName = Pontus;
+			productReference = 7F9D1F94274C9ADC00D2A216 /* Pontus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F9D1FA9274C9AE000D2A216 /* PontusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F9D1FC1274C9AE000D2A216 /* Build configuration list for PBXNativeTarget "PontusTests" */;
+			buildPhases = (
+				7F9D1FA6274C9AE000D2A216 /* Sources */,
+				7F9D1FA7274C9AE000D2A216 /* Frameworks */,
+				7F9D1FA8274C9AE000D2A216 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F9D1FAC274C9AE000D2A216 /* PBXTargetDependency */,
+			);
+			name = PontusTests;
+			productName = PontusTests;
+			productReference = 7F9D1FAA274C9AE000D2A216 /* PontusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F9D1FB3274C9AE000D2A216 /* PontusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F9D1FC4274C9AE000D2A216 /* Build configuration list for PBXNativeTarget "PontusUITests" */;
+			buildPhases = (
+				7F9D1FB0274C9AE000D2A216 /* Sources */,
+				7F9D1FB1274C9AE000D2A216 /* Frameworks */,
+				7F9D1FB2274C9AE000D2A216 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F9D1FB6274C9AE000D2A216 /* PBXTargetDependency */,
+			);
+			name = PontusUITests;
+			productName = PontusUITests;
+			productReference = 7F9D1FB4274C9AE000D2A216 /* PontusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F9D1F8C274C9ADC00D2A216 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					7F9D1F93274C9ADC00D2A216 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					7F9D1FA9274C9AE000D2A216 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 7F9D1F93274C9ADC00D2A216;
+					};
+					7F9D1FB3274C9AE000D2A216 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 7F9D1F93274C9ADC00D2A216;
+					};
+				};
+			};
+			buildConfigurationList = 7F9D1F8F274C9ADC00D2A216 /* Build configuration list for PBXProject "Pontus" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F9D1F8B274C9ADC00D2A216;
+			productRefGroup = 7F9D1F95274C9ADC00D2A216 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F9D1F93274C9ADC00D2A216 /* Pontus */,
+				7F9D1FA9274C9AE000D2A216 /* PontusTests */,
+				7F9D1FB3274C9AE000D2A216 /* PontusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F9D1F92274C9ADC00D2A216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F38FC02276052C300E14CA1 /* iconfont.ttf in Resources */,
+				7F233881276C7CEF00AFAA34 /* img_loading.png in Resources */,
+				7F9D1FA4274C9AE000D2A216 /* LaunchScreen.storyboard in Resources */,
+				7F9D1FA1274C9AE000D2A216 /* Assets.xcassets in Resources */,
+				7F9D1F9F274C9ADC00D2A216 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F9D1FA8274C9AE000D2A216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F9D1FB2274C9AE000D2A216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C8B33D3185403ECBE331F46F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pontus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCC640A43DE43B2538D6237A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pontus/Pods-Pontus-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pontus/Pods-Pontus-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pontus/Pods-Pontus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF27609701CA40FB32750FE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pontus/Pods-Pontus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pontus/Pods-Pontus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pontus/Pods-Pontus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F9D1F90274C9ADC00D2A216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF32367274E6E220004515A /* BaseCollectionReusableView.swift in Sources */,
+				7F95A74D2751111C000EF648 /* JuggleType.swift in Sources */,
+				7F9D2002274CEC8100D2A216 /* AppConfigModel.swift in Sources */,
+				7F2A0F292750CB9100F32709 /* JuggleCollectionHeaderView.swift in Sources */,
+				7F9D1FDB274CE0BE00D2A216 /* UIViewExtension.swift in Sources */,
+				7F9D1FFE274CEBCA00D2A216 /* DateExtension.swift in Sources */,
+				7FECB43B27683F5B000C923D /* UMCommonSwift.swift in Sources */,
+				7F9D1FEC274CE21300D2A216 /* WebViewController.swift in Sources */,
+				7F9D1FD0274CDBD800D2A216 /* BaseController.swift in Sources */,
+				7F2A0F242750BE9D00F32709 /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
+				7F9D200E274CF71400D2A216 /* AppRouter.swift in Sources */,
+				7FF3236B274E6E580004515A /* BaseTableViewHeaderFooterView.swift in Sources */,
+				7F9D1FE5274CE14800D2A216 /* StringExtension.swift in Sources */,
+				7F9D200C274CF6ED00D2A216 /* OnBoarding.swift in Sources */,
+				7F9D1FEA274CE19700D2A216 /* URefresh.swift in Sources */,
+				7FECB421276351B8000C923D /* GuideVC.swift in Sources */,
+				7FECB43927683F46000C923D /* UMAnalyticsSwift.swift in Sources */,
+				7FDB3E18275F6C720033239D /* AboutVC.swift in Sources */,
+				7F9D1FD4274CDD7500D2A216 /* NaviController.swift in Sources */,
+				7F2A0F272750CB5A00F32709 /* JuggleCollectionFooterView.swift in Sources */,
+				7F9D1F9C274C9ADC00D2A216 /* ViewController.swift in Sources */,
+				7F95A74F275114E5000EF648 /* JuggleCollectionGoodViewCell.swift in Sources */,
+				7FF3235D274E6AD90004515A /* RequestManager.swift in Sources */,
+				7FECB42F276359E7000C923D /* PageControl.swift in Sources */,
+				7F9D1FEF274CE27C00D2A216 /* SegmentMainController.swift in Sources */,
+				7F9D200A274CF6B900D2A216 /* AppPreferences.swift in Sources */,
+				7F38FC042760719500E14CA1 /* DSImageUploader.swift in Sources */,
+				7F9D2008274CF66D00D2A216 /* DimRuntimeData.swift in Sources */,
+				7F94DA192757647400D46F4F /* DToast.swift in Sources */,
+				7F4F4A49275F96E5006DC9E3 /* SelfInfoVC.swift in Sources */,
+				7F9D1FD7274CDF0F00D2A216 /* UIColorExtension.swift in Sources */,
+				7F38FC0827632C8800E14CA1 /* PontusConfigUm.swift in Sources */,
+				7FF3236D274E71070004515A /* TabBarController.swift in Sources */,
+				7F2A0F2E2750CC5300F32709 /* JuggleCollectionPicViewCell.swift in Sources */,
+				7FF32362274E6B810004515A /* PontusConfigBase.swift in Sources */,
+				7F2A0F3A2757550800F32709 /* JuggleManager.swift in Sources */,
+				7F2A0F362754C55D00F32709 /* JuggleCollectionLoginViewCell.swift in Sources */,
+				7F2A0F2C2750CBE000F32709 /* UEmptyDataSet.swift in Sources */,
+				7F2A0F302750D92B00F32709 /* JuggleMainModel.swift in Sources */,
+				7F95A754275399B7000EF648 /* JuggleCollectionHSViewCell.swift in Sources */,
+				7F9D1FF1274CE30D00D2A216 /* LoadingVC.swift in Sources */,
+				7F95A7562753A617000EF648 /* JuggleCollectionHSVCViewCell.swift in Sources */,
+				7F2A0F342754AE5C00F32709 /* JuggleCollectionDIYViewCell.swift in Sources */,
+				7F9D1FE3274CE13300D2A216 /* DispatchQueueExtension.swift in Sources */,
+				7FF32365274E6E050004515A /* BaseTableViewCell.swift in Sources */,
+				7F9D1FE7274CE15D00D2A216 /* DictionaryExtension.swift in Sources */,
+				7FECB43127635A18000C923D /* GifImageOperation.swift in Sources */,
+				7FECB43D27683F6D000C923D /* UMCommonLogSwift.swift in Sources */,
+				7FDB3E16275F48C30033239D /* SetVC.swift in Sources */,
+				7F9D1FE1274CE11100D2A216 /* UIImageExtensions.swift in Sources */,
+				7F9D1FD2274CDC0C00D2A216 /* Global.swift in Sources */,
+				7FF32369274E6E410004515A /* BaseCollectionViewCell.swift in Sources */,
+				7F9D1FD9274CE09800D2A216 /* ArrayExtensions.swift in Sources */,
+				7FECB42C27635942000C923D /* GuidePageView.swift in Sources */,
+				7F2A0F222750BE8000F32709 /* UCollectionViewAlignedLayout.swift in Sources */,
+				7FA7D547276B2B9C00319D5B /* MineVC.swift in Sources */,
+				7F9D2023274F736600D2A216 /* Config.swift in Sources */,
+				7F9D1FDF274CE0F500D2A216 /* UIDeviceExtension.swift in Sources */,
+				7F9D1FDD274CE0DC00D2A216 /* UIBarButtonItemExtension.swift in Sources */,
+				7FF3235F274E6B3E0004515A /* API.swift in Sources */,
+				7F9D1FCB274CD7B200D2A216 /* UNoticeBar.swift in Sources */,
+				7F95A74B27510BAD000EF648 /* JuggleCollectionBannerViewCell.swift in Sources */,
+				7F2A0F1F2750B89D00F32709 /* JuggleVC.swift in Sources */,
+				7F95A7632757A2CC000EF648 /* UserModel.swift in Sources */,
+				7F94DA2027587CA200D46F4F /* AppDelegate.swift in Sources */,
+				7F38FC0A27632D0400E14CA1 /* PontusConfigAd.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F9D1FA6274C9AE000D2A216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F9D1FAF274C9AE000D2A216 /* PontusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F9D1FB0274C9AE000D2A216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F9D1FB9274C9AE000D2A216 /* PontusUITests.swift in Sources */,
+				7F9D1FBB274C9AE000D2A216 /* PontusUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F9D1FAC274C9AE000D2A216 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F9D1F93274C9ADC00D2A216 /* Pontus */;
+			targetProxy = 7F9D1FAB274C9AE000D2A216 /* PBXContainerItemProxy */;
+		};
+		7F9D1FB6274C9AE000D2A216 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F9D1F93274C9ADC00D2A216 /* Pontus */;
+			targetProxy = 7F9D1FB5274C9AE000D2A216 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F9D1F9D274C9ADC00D2A216 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F9D1F9E274C9ADC00D2A216 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F9D1FA2274C9AE000D2A216 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F9D1FA3274C9AE000D2A216 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F9D1FBC274C9AE000D2A216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F9D1FBD274C9AE000D2A216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F9D1FBF274C9AE000D2A216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7784EEA6E1EDF121FF6D5D5A /* Pods-Pontus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7YZ8QN2DAP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pontus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "爱宠";
+				INFOPLIST_KEY_NSCameraUsageDescription = "My description about why I need this capability";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "My description about why I need this capability";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "My description about why I need this capability";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dim.lovepet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhangzhoujun/Documents/workspace/brick/pontus-ios/Pontus/Pontus-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F9D1FC0274C9AE000D2A216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E1D0F1107C02F89DF3A2E41 /* Pods-Pontus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7YZ8QN2DAP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pontus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "爱宠";
+				INFOPLIST_KEY_NSCameraUsageDescription = "My description about why I need this capability";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "My description about why I need this capability";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "My description about why I need this capability";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dim.lovepet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zhangzhoujun/Documents/workspace/brick/pontus-ios/Pontus/Pontus-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F9D1FC2274C9AE000D2A216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRK26J6C79;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dim.pontus.PontusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pontus.app/Pontus";
+			};
+			name = Debug;
+		};
+		7F9D1FC3274C9AE000D2A216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRK26J6C79;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dim.pontus.PontusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pontus.app/Pontus";
+			};
+			name = Release;
+		};
+		7F9D1FC5274C9AE000D2A216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRK26J6C79;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dim.pontus.PontusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pontus;
+			};
+			name = Debug;
+		};
+		7F9D1FC6274C9AE000D2A216 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZRK26J6C79;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dim.pontus.PontusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pontus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F9D1F8F274C9ADC00D2A216 /* Build configuration list for PBXProject "Pontus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F9D1FBC274C9AE000D2A216 /* Debug */,
+				7F9D1FBD274C9AE000D2A216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F9D1FBE274C9AE000D2A216 /* Build configuration list for PBXNativeTarget "Pontus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F9D1FBF274C9AE000D2A216 /* Debug */,
+				7F9D1FC0274C9AE000D2A216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F9D1FC1274C9AE000D2A216 /* Build configuration list for PBXNativeTarget "PontusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F9D1FC2274C9AE000D2A216 /* Debug */,
+				7F9D1FC3274C9AE000D2A216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F9D1FC4274C9AE000D2A216 /* Build configuration list for PBXNativeTarget "PontusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F9D1FC5274C9AE000D2A216 /* Debug */,
+				7F9D1FC6274C9AE000D2A216 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F9D1F8C274C9ADC00D2A216 /* Project object */;
+}

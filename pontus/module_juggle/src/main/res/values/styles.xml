@@ -1,0 +1,35 @@
+<resources>
+
+    <style name="home_tablayout_style" parent="Base.Widget.Design.TabLayout">
+        <item name="tabBackground">@android:color/transparent</item>
+        <item name="tabRippleColor">@android:color/transparent</item>
+        <item name="tabIndicatorColor">@color/color_dark</item>
+        <item name="tabIndicatorHeight">@dimen/dp_0</item>
+        <item name="tabSelectedTextColor">@color/color_dark</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="home_price_big">
+        <item name="android:textSize">@dimen/sp_17</item>
+    </style>
+
+    <style name="home_price_small">
+        <item name="android:textSize">@dimen/sp_11</item>
+    </style>
+
+    <style name="home_dialog" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="home_loading" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

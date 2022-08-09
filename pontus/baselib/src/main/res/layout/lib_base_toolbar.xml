@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="?android:attr/actionBarSize">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/gos_toolbar"
+        style="@style/lib_base_NoSpaceActionBarTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/touming"
+        android:fitsSystemWindows="true"
+        android:minHeight="?android:attr/actionBarSize"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <RelativeLayout
+                android:id="@+id/gos_toolbar_back_layout"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="?android:attr/actionBarSize">
+
+                <com.qm.lib.widget.dim.AppImageView
+                    android:id="@+id/gos_toolbar_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:visibility="gone" />
+
+                <com.qm.lib.widget.dim.AppTextView
+                    android:id="@+id/gos_toolbar_back_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:text="返回"
+                    android:textColor="@color/colorBaseWhite"
+                    android:textSize="@dimen/sp_12" />
+
+            </RelativeLayout>
+
+            <com.qm.lib.widget.dim.AppTextView
+                android:id="@+id/gos_toolbar_close_text"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/gos_toolbar_back_layout"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dp_20"
+                android:text="关闭"
+                android:textColor="@color/colorBaseWhite"
+                android:textSize="@dimen/sp_12"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:id="@+id/gos_toolbar_close_layout"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_toRightOf="@+id/gos_toolbar_back_layout"
+                android:visibility="gone">
+
+                <com.qm.lib.widget.dim.AppImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toolbar_close" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/gos_toolbar_right_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:minWidth="?android:attr/actionBarSize"
+                android:minHeight="?android:attr/actionBarSize"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.qm.lib.widget.dim.AppImageView
+                    android:id="@+id/gos_toolbar_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:visibility="visible" />
+
+                <com.qm.lib.widget.dim.AppTextView
+                    android:id="@+id/gos_toolbar_right_text"
+                    style="@style/style_text_goden_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/gos_toolbar_Right_2_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_toLeftOf="@+id/gos_toolbar_right_layout"
+                android:minHeight="?android:attr/actionBarSize"
+                android:visibility="gone">
+
+                <com.qm.lib.widget.dim.AppImageView
+                    android:id="@+id/gos_toolbar_2_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <com.qm.lib.widget.dim.AppTextView
+                android:id="@+id/gos_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_18"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.qm.module_juggle.ui.JuggleFraViewModel" />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:binding="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_20"
+            android:background="@color/white"
+            android:visibility="gone" />
+
+        <com.qm.lib.widget.toolbar.JYToolbar
+            android:id="@+id/toolbar"
+            style="@style/appToolbar"
+            android:layout_below="@+id/top_view"
+            android:visibility="gone"
+            app:onBackClick="@{viewModel.onBackClick}"
+            app:onRightClick="@{viewModel.onRightClick}"
+            app:toolbarOptions="@{viewModel.toolbarOptions}" />
+
+        <com.qm.lib.widget.refresh.JYSwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            binding:onLoadMoreCommand="@{viewModel.onLoadMoreCommand}"
+            binding:onRefreshCommand="@{viewModel.onRefreshCommand}">
+
+            <com.qm.lib.widget.refresh.JYRecyclerView
+                android:id="@+id/home_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.qm.lib.widget.refresh.JYSwipeRefreshLayout>
+
+        <com.qm.lib.widget.refresh.JYRecyclerView
+            android:id="@+id/home_recyclerview_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:visibility="gone" />
+
+        <com.qm.lib.widget.dim.AppImageView
+            android:id="@+id/go_top"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_73"
+            android:background="@mipmap/home_gotop"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>

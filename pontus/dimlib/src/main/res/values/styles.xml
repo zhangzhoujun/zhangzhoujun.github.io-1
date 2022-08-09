@@ -1,0 +1,268 @@
+<resources>
+
+    <style name="style_text_18">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="style_text_16">
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="style_text_15">
+        <item name="android:textSize">@dimen/sp_15</item>
+    </style>
+
+    <style name="style_text_13">
+        <item name="android:textSize">@dimen/sp_13</item>
+    </style>
+
+    <style name="style_text_14">
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="style_text_12">
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+
+    <style name="style_text_11">
+        <item name="android:textSize">@dimen/sp_11</item>
+    </style>
+
+    <style name="style_text_10">
+        <item name="android:textSize">@dimen/sp_10</item>
+    </style>
+    <!-- 错误的提示 -->
+    <style name="style_text_error_11" parent="@style/style_text_11">
+        <item name="android:textColor">@color/colorErrorTip</item>
+    </style>
+
+    <style name="style_text_error_12" parent="@style/style_text_12">
+        <item name="android:textColor">@color/colorErrorTip</item>
+    </style>
+
+    <style name="style_text_error_13" parent="@style/style_text_13">
+        <item name="android:textColor">@color/colorErrorTip</item>
+    </style>
+
+    <style name="style_text_error_15" parent="@style/style_text_15">
+        <item name="android:textColor">@color/colorErrorTip</item>
+    </style>
+
+    <style name="style_text_error_18" parent="@style/style_text_18">
+        <item name="android:textColor">@color/colorErrorTip</item>
+    </style>
+    <!-- 绿色的提示 -->
+    <style name="style_text_green_11" parent="@style/style_text_11">
+        <item name="android:textColor">@color/colorGreenTip</item>
+    </style>
+
+    <style name="style_text_green_12" parent="@style/style_text_12">
+        <item name="android:textColor">@color/colorGreenTip</item>
+    </style>
+
+    <style name="style_text_green_13" parent="@style/style_text_13">
+        <item name="android:textColor">@color/colorGreenTip</item>
+    </style>
+
+    <style name="style_text_green_15" parent="@style/style_text_15">
+        <item name="android:textColor">@color/colorGreenTip</item>
+    </style>
+
+    <style name="style_text_green_18" parent="@style/style_text_18">
+        <item name="android:textColor">@color/colorGreenTip</item>
+    </style>
+    <!-- 特别突出的金色字体 -->
+    <style name="style_text_goden_10" parent="@style/style_text_10">
+        <item name="android:textColor">@color/colorBaseGoden</item>
+    </style>
+
+    <style name="style_text_goden_11" parent="@style/style_text_11">
+        <item name="android:textColor">@color/colorBaseGoden</item>
+    </style>
+
+    <style name="style_text_goden_12" parent="@style/style_text_12">
+        <item name="android:textColor">@color/colorBaseGoden</item>
+    </style>
+
+    <style name="style_text_goden_13" parent="@style/style_text_13">
+        <item name="android:textColor">@color/colorBaseGoden</item>
+    </style>
+
+    <style name="style_text_goden_15" parent="@style/style_text_15">
+        <item name="android:textColor">@color/colorBaseGoden</item>
+    </style>
+
+    <style name="style_text_goden_18" parent="@style/style_text_18">
+        <item name="android:textColor">@color/colorBaseGoden</item>
+    </style>
+    <!-- 白色的字体 -->
+    <style name="style_text_white_10" parent="@style/style_text_10">
+        <item name="android:textColor">@color/colorBaseWhite</item>
+    </style>
+
+    <style name="style_text_white_11" parent="@style/style_text_11">
+        <item name="android:textColor">@color/colorBaseWhite</item>
+    </style>
+
+    <style name="style_text_white_12" parent="@style/style_text_12">
+        <item name="android:textColor">@color/colorBaseWhite</item>
+    </style>
+
+    <style name="style_text_white_13" parent="@style/style_text_13">
+        <item name="android:textColor">@color/colorBaseWhite</item>
+    </style>
+
+    <style name="style_text_white_15" parent="@style/style_text_15">
+        <item name="android:textColor">@color/colorBaseWhite</item>
+    </style>
+
+    <style name="style_text_white_16" parent="@style/style_text_16">
+        <item name="android:textColor">@color/colorBaseWhite</item>
+    </style>
+
+    <style name="style_text_white_18" parent="@style/style_text_18">
+        <item name="android:textColor">@color/colorBaseWhite</item>
+    </style>
+    <!-- 999999普通段落的字体 -->
+    <style name="style_text_content_10" parent="@style/style_text_10">
+        <item name="android:textColor">@color/colorContent</item>
+    </style>
+
+    <style name="style_text_content_11" parent="@style/style_text_11">
+        <item name="android:textColor">@color/colorContent</item>
+    </style>
+
+    <style name="style_text_content_12" parent="@style/style_text_12">
+        <item name="android:textColor">@color/colorContent</item>
+    </style>
+
+    <style name="style_text_content_13" parent="@style/style_text_13">
+        <item name="android:textColor">@color/colorContent</item>
+    </style>
+
+    <style name="style_text_content_15" parent="@style/style_text_15">
+        <item name="android:textColor">@color/colorContent</item>
+    </style>
+
+    <style name="style_text_content_18" parent="@style/style_text_18">
+        <item name="android:textColor">@color/colorContent</item>
+    </style>
+    <!-- 1F1F1F的字体 -->
+    <style name="style_text_1F_11" parent="@style/style_text_11">
+        <item name="android:textColor">@color/c_1F1F1F</item>
+    </style>
+
+    <style name="style_text_1F_12" parent="@style/style_text_12">
+        <item name="android:textColor">@color/c_1F1F1F</item>
+    </style>
+
+    <style name="style_text_1F_13" parent="@style/style_text_13">
+        <item name="android:textColor">@color/c_1F1F1F</item>
+    </style>
+
+    <style name="style_text_1F_15" parent="@style/style_text_15">
+        <item name="android:textColor">@color/c_1F1F1F</item>
+    </style>
+
+    <style name="style_text_1F_16" parent="@style/style_text_16">
+        <item name="android:textColor">@color/c_1F1F1F</item>
+    </style>
+
+    <style name="style_text_1F_18" parent="@style/style_text_18">
+        <item name="android:textColor">@color/c_1F1F1F</item>
+    </style>
+
+    <!-- 333普通段落的字体 -->
+    <style name="style_text_black_11" parent="@style/style_text_11">
+        <item name="android:textColor">@color/c_333333</item>
+    </style>
+
+    <style name="style_text_black_12" parent="@style/style_text_12">
+        <item name="android:textColor">@color/c_333333</item>
+    </style>
+
+    <style name="style_text_black_13" parent="@style/style_text_13">
+        <item name="android:textColor">@color/c_333333</item>
+    </style>
+
+    <style name="style_text_black_15" parent="@style/style_text_15">
+        <item name="android:textColor">@color/c_333333</item>
+    </style>
+
+    <style name="style_text_black_18" parent="@style/style_text_18">
+        <item name="android:textColor">@color/c_333333</item>
+    </style>
+
+    <!-- 666普通段落的字体 -->
+    <style name="style_text_666_11" parent="@style/style_text_11">
+        <item name="android:textColor">@color/c_666666</item>
+    </style>
+
+    <style name="style_text_666_12" parent="@style/style_text_12">
+        <item name="android:textColor">@color/c_666666</item>
+    </style>
+
+    <style name="style_text_666_13" parent="@style/style_text_13">
+        <item name="android:textColor">@color/c_666666</item>
+    </style>
+
+    <style name="style_text_666_14" parent="@style/style_text_14">
+        <item name="android:textColor">@color/c_666666</item>
+    </style>
+
+    <style name="style_text_666_15" parent="@style/style_text_15">
+        <item name="android:textColor">@color/c_666666</item>
+    </style>
+
+    <style name="style_text_666_18" parent="@style/style_text_18">
+        <item name="android:textColor">@color/c_666666</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppThemeFull" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>   
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppThemeDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/transparent</item>
+    </style>
+
+    <style name="AnimDown" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/push_scale_out</item>
+    </style>
+
+    <style name="AnimUp" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+    <style name="AnimRight" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_right_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_right_anim</item>
+    </style>
+
+    <style name="AnimMiddle" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/mid_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/mid_exit_anim</item>
+    </style>
+</resources>

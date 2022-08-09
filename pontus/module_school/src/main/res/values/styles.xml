@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="school_tablayout_style" parent="Base.Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="tabIndicatorHeight">@dimen/dp_0</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>

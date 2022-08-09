@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="com.qm.lib.utils.RuntimeData" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 顶部用户信息展示 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_126"
+            android:background="@mipmap/home_mine_top_bg">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:layout_alignParentBottom="true">
+
+                <com.qm.lib.widget.dim.AppImageView
+                    android:id="@+id/head"
+                    android:layout_width="@dimen/dp_45"
+                    android:layout_height="@dimen/dp_45"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/dp_25"
+                    android:layout_marginBottom="@dimen/dp_15" />
+
+                <com.qm.lib.widget.dim.AppTextView
+                    android:id="@+id/code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/head"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_toRightOf="@+id/head"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dp_18"
+                    android:textColor="#543800"
+                    android:textSize="@dimen/sp_13" />
+
+                <com.qm.lib.widget.dim.AppTextView
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/code"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_3"
+                    android:layout_toRightOf="@+id/head"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/dp_28"
+                    android:textColor="#543800"
+                    android:textSize="@dimen/sp_20"
+                    android:textStyle="bold" />
+
+                <com.qm.lib.widget.dim.AppTextView
+                    android:id="@+id/copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_alignTop="@+id/code"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_toRightOf="@+id/code"
+                    android:text="复制"
+                    android:textColor="#543800"
+                    android:textSize="@dimen/sp_13" />
+
+                <com.qm.lib.widget.dim.AppImageView
+                    android:id="@+id/set"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_above="@+id/head"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:background="@mipmap/home_mine_top_set" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/info_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_56"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/home_mine_top_info_bg"
+            android:visibility="visible">
+
+            <com.qm.lib.widget.dim.AppTextView
+                android:id="@+id/vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:minHeight="@dimen/dp_28"
+                android:textColor="#FDE3B2"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold" />
+
+            <com.qm.lib.widget.dim.AppTextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_23"
+                android:layout_alignTop="@+id/vip"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dp_2_5"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@drawable/home_mine_quanyi_bg"
+                android:gravity="center"
+                android:minWidth="@dimen/dp_81"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:textColor="#393939"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <com.qm.lib.widget.dim.AppTextView
+                android:id="@+id/address"
+                android:layout_width="@dimen/dp_230"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vip"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_4"
+                android:ellipsize="end"
+                android:minHeight="@dimen/dp_14"
+                android:singleLine="true"
+                android:textColor="#FDE3B2"
+                android:textSize="@dimen/sp_10"
+                android:visibility="@{RuntimeData.getInstance().getHideBlock() ? View.INVISIBLE : View.VISIBLE}" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

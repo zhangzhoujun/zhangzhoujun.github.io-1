@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qy.module_mine">
+
+    <application>
+
+        <activity android:name=".ui.info.MyInfoActivity"/>
+        <activity android:name=".ui.set.SetActivity"/>
+
+    </application>
+</manifest>

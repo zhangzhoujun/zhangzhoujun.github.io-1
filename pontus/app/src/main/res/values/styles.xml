@@ -1,0 +1,25 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="app_skin_span_normal_text_color">#333333</item>
+        <item name="app_skin_span_pressed_text_color">#333333</item>
+        <item name="app_skin_span_loading_color">@color/colorPrimary</item>
+        <item name="app_skin_span_normal_bg_color">@color/common_bg</item>
+        <item name="app_skin_span_pressed_bg_color">@color/common_bg</item>
+
+    </style>
+
+    <style name="SplashAppTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowBackground">@drawable/qm_splash_pic</item>
+    </style>
+
+</resources>

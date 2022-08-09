@@ -1,0 +1,30 @@
+<resources>
+    <attr name="app_skin_span_normal_text_color" format="color"/>
+    <attr name="app_skin_span_pressed_text_color" format="color"/>
+    <attr name="app_skin_span_normal_bg_color" format="color"/>
+    <attr name="app_skin_span_pressed_bg_color" format="color"/>
+    <attr name="app_skin_span_loading_color" format="color"/>
+
+    <style name="lib_base_NoSpaceActionBarTheme" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+
+    <style name="appToolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:minHeight">?android:attr/actionBarSize</item>
+    </style>
+
+    <!--Dialog样式   没有四周边框-->
+    <style name="lib_base_psd_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#FF242424</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_36"
+    android:orientation="vertical">
+
+    <com.qm.lib.widget.dim.AppTextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_25"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_15"
+        android:textStyle="bold" />
+
+    <com.qm.lib.widget.dim.AppTextView
+        android:id="@+id/name_small"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_20"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_5"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_12"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/tab_item_indicator"
+        android:layout_width="@dimen/dp_26"
+        android:layout_height="@dimen/dp_3"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_3"
+        android:background="@drawable/school_index_tab_indicatior" />
+</RelativeLayout>

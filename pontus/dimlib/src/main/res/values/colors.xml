@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFFFF</color>
+    <color name="colorAccent">#0BC8FF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- 小面积使用，用于特别需要强调和突出的文字、按钮和icon
+    如：下一步、提交按钮，可选择、点击部分等 -->
+    <color name="colorBaseGoden">#DDCB8B</color>
+    <!-- 用于底色背景 -->
+    <color name="colorBaseBg">#FF17181A</color>
+    <!-- 大范围使用，用于重要级文字信息、内页标题信息
+     如：导航名称、大模块标题、GOS数量等 -->
+    <color name="colorBaseWhite">#FFFFFF</color>
+    <color name="node_bg">#FFFFFF</color>
+    <color name="common_bg">#FFFFFF</color>
+    <color name="common_line">#F4F4F4</color>
+
+    <!-- 用于模块、内容区域底色 -->
+    <color name="colorItemlBg">#1D1E21</color>
+    <!-- 用于普通级段落信息、引导语、辅助次要文字信息 -->
+    <color name="colorContent">#FF999999</color>
+
+    <color name="but_click">#66FFFFFF</color>
+    <color name="but_normal">#FFFFFFFF</color>
+
+    <!-- 用于按钮不可点击状态 -->
+    <color name="colorBtnDisable">#665E40</color>
+    <!-- 用于部分固定提示信息，如算力明细支出数量 -->
+    <color name="colorGreenTip">#94EB7E</color>
+    <!-- 用于错误提示 -->
+    <color name="colorErrorTip">#FD5353</color>
+
+    <color name="color_2B">#FF2B2B2B</color>
+    <color name="color_FF17181A">#FF17181A</color>
+
+
+    <color name="c_ddcb8b">#DDCB8B</color>
+    <color name="c_DBB068">#DBB068</color>
+    <color name="c_fefefe">#FEFEFE</color>
+
+    <!-- 分隔线 -->
+    <color name="color_dialog_line">#2B2B2B</color>
+    <color name="color_alpha_60">#66FFFFFF</color>
+    <color name="c_ff1d1e21">#ff1d1e21</color>
+    <color name="c_94EB7E">#FF94EB7E</color>
+    <color name="c_EEEEEE">#EEEEEE</color>
+    <color name="c_F17C85">#FFF17C85</color>
+
+    <color name="c_lianmeng">#FFDDCB8B</color>
+    <color name="c_chanye">#FF94EB7E</color>
+    <color name="c_yonghu">#FFFF6A6A</color>
+
+    <color name="line_empty">#DDDDDD</color>
+    <color name="line_full">#333333</color>
+    <color name="node_line_blue">#0099FF</color>
+    <color name="node_text">#333333</color>
+    <color name="node_text_low">#999999</color>
+    <color name="node_text_blue">@color/colorAccent</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="F8F8F8">#F8F8F8</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="orange">#FFA500</color>
+    <color name="touming">#00000000</color>
+
+    <array name="in_colors_light">
+        <item>#4B03A9F4</item>
+        <item>#3303A9F4</item>
+        <item>#1903A9F4</item>
+    </array>
+
+    <color name="color_dark">#448EF7</color>
+    <color name="color_light">#79C1FC</color>
+    <color name="color_alpha_start">#79C1FC</color>
+    <color name="color_alpha_end">#448EF7</color>
+    <color name="color_alpha_start_click">#6679C1FC</color>
+    <color name="color_alpha_end_click">#66448EF7</color>
+
+    <color name="c_666666">#FF666666</color>
+    <color name="c_F3F3F3">#FFF3F3F3</color>
+    <color name="c_333333">#FF333333</color>
+    <color name="c_999999">#FF999999</color>
+    <color name="c_1F1F1F">#FF1F1F1F</color>
+
+    <color name="transparent_00">#00000000</color>
+    <color name="transparent_100">#FF000000</color>
+    <color name="transparent_80">#44000000</color>
+    <color name="transparent_60">#99000000</color>
+    <color name="transparent_50">#7d000000</color>
+    <color name="transparent_40">#66000000</color>
+    <color name="white_30">#4CFFFFFF</color>
+    <color name="white_90">#e6FFFFFF</color>
+
+    <color name="c_watch_sport">#43B3BE</color>
+    <color name="c_step_send">#FF952D</color>
+    <color name="c_step_gray">#D6D6D6</color>
+    <color name="c_step_blue">#448EF7</color>
+    <color name="c_step_top_bg">#448EF7</color>
+</resources>

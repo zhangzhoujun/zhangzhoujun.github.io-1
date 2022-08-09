@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="lib_base_load_empty">暂无数据</string>
+    <string name="lib_base_loading">加载中…</string>
+    <string name="lib_base_load_failed">加载失败，点击重试</string>
+    <string name="lib_base_load_failed_no_network">网络失联了…\n请联网后点击重试</string>
+    <string name="lib_base_load_str_none" />
+
+</resources>

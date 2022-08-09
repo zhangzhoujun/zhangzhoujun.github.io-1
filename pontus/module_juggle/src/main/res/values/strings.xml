@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="string_origin_location" />
+    <string name="string_origin_direction" />
+    <string name="string_origin_spe" />
+
+    <string name="login_bottom_des">我已阅读并同意\"隐私政策\"和"\"用户协议\"</string>
+</resources>

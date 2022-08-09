@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="banner"
+            type="String" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.qm.lib.widget.dim.AppImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_375"
+            app:placeId="@{@drawable/lib_base_icon_empty}"
+            app:webUrl="@{banner}" />
+
+    </RelativeLayout>
+</layout>

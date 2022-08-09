@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qm.module_version">
+
+    <application>
+
+        <activity
+            android:name="com.qm.module_version.ui.VersionActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/version_dialog" />
+
+        <activity
+            android:name="com.qm.module_version.ui.DownloadActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/version_dialog" />
+
+    </application>
+
+</manifest>

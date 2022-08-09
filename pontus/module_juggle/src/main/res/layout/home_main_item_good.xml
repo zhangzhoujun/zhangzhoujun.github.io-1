@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_270"
+        android:background="@drawable/home_mine_item_bg">
+
+        <com.qm.lib.widget.dim.AppImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/dp_170"
+            android:layout_height="@dimen/dp_170"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop" />
+
+        <com.qm.lib.widget.dim.AppTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_37"
+            android:layout_below="@+id/icon"
+            android:layout_marginTop="@dimen/dp_5"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingRight="@dimen/dp_5"
+            android:textColor="@color/c_333333"
+            android:textSize="@dimen/sp_13" />
+
+        <com.qm.lib.widget.dim.AppTextView
+            android:id="@+id/youhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_6"
+            android:background="@mipmap/home_goods_youhui_bg"
+            android:gravity="center"
+            android:minHeight="@dimen/dp_16"
+            android:paddingLeft="@dimen/dp_7"
+            android:paddingRight="@dimen/dp_7"
+            android:textColor="#DBB068"
+            android:textSize="@dimen/sp_11" />
+
+        <com.qm.lib.widget.dim.AppTextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/youhui"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="¥"
+            android:textColor="#DA0000"
+            android:textSize="@dimen/sp_11" />
+
+        <com.qm.lib.widget.dim.AppTextView
+            android:id="@+id/prica_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/price"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:layout_toRightOf="@+id/price"
+            android:textColor="@color/c_999999"
+            android:textSize="@dimen/sp_10" />
+
+        <com.qm.lib.widget.dim.AppTextView
+            android:id="@+id/sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/price"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_5"
+            android:textColor="@color/c_999999"
+            android:textSize="@dimen/sp_10" />
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.qm.module_common.ui.result.CommonResultViewModel" />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:binding="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_bg">
+
+        <com.qm.lib.widget.toolbar.JYToolbar
+            android:id="@+id/common_result_toolbar"
+            style="@style/appToolbar"
+            app:onBackClick="@{viewModel.onBackClick}"
+            app:toolbarOptions="@{viewModel.toolbarOptions}" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/common_result_toolbar"
+            android:background="@color/common_line" />
+
+        <com.qm.lib.widget.dim.AppImageView
+            android:id="@+id/common_result_icon"
+            android:layout_width="@dimen/dp_165"
+            android:layout_height="@dimen/dp_146"
+            android:layout_below="@+id/common_result_toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_97"
+            app:resoultType="@{viewModel.mType}" />
+
+        <com.qm.lib.widget.dim.AppTextView
+            android:id="@+id/common_result_des"
+            style="@style/style_text_goden_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/common_result_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_27"
+            android:minHeight="@dimen/dp_18"
+            android:text="@{viewModel.des}" />
+
+        <com.qm.lib.widget.dim.DimButton
+            android:id="@+id/common_result_sure"
+            style="@style/style_text_white_16"
+            android:layout_width="@dimen/dp_290"
+            android:layout_height="@dimen/dp_44"
+            android:layout_below="@+id/common_result_des"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_40"
+            android:gravity="center"
+            android:text="@{viewModel.sureText}"
+            app:canClick="@{true}"
+            binding:onClickCommand="@{viewModel.onSureClick}" />
+
+    </RelativeLayout>
+</layout>

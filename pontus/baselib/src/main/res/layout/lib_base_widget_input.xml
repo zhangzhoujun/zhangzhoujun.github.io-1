@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="android.text.TextUtils" />
+
+        <import type="android.text.InputType" />
+
+        <variable
+            name="input"
+            type="com.qm.lib.widget.input.JYInputOptions" />
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+
+        <TextView
+            android:id="@+id/input_left"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:gravity="center_vertical"
+            android:minWidth="@dimen/dp_50"
+            android:paddingLeft="@dimen/dp_3"
+            android:text="@{input.leftDes}"
+            android:textColor="@color/c_333333"
+            android:textSize="@dimen/sp_13"
+            android:textStyle="bold"
+            android:visibility="@{input.isShowLeft ? View.VISIBLE : View.GONE}" />
+
+        <com.qm.lib.widget.dim.AppEditText
+            android:id="@+id/input_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_toLeftOf="@+id/input_right"
+            android:layout_toRightOf="@+id/input_left"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@{input.inputEditHintString}"
+            android:inputType='@{input.doesPswInput ? (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD) : InputType.TYPE_CLASS_TEXT }'
+            android:minWidth="@dimen/dp_65"
+            android:singleLine="true"
+            android:text="@{input.inputEditString}"
+            android:textColor="#333333"
+            android:textColorHint="#999999"
+            android:textCursorDrawable="@drawable/lib_base_input_coursor"
+            android:textSize="@{TextUtils.isEmpty(input.inputEditString) ? @dimen/sp_13 : @dimen/sp_18}" />
+
+        <com.qm.lib.widget.dim.AppTextView
+            android:id="@+id/input_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/lib_base_input_code_bg"
+            android:gravity="center"
+            android:minWidth="@dimen/dp_62"
+            android:minHeight="@dimen/dp_20"
+            android:paddingLeft="@dimen/dp_6"
+            android:paddingTop="@dimen/dp_3"
+            android:paddingRight="@dimen/dp_6"
+            android:paddingBottom="@dimen/dp_3"
+            android:text="@{input.inputRightString}"
+            android:textColor="@{input.isInputRightCount() ? @color/white : @color/white}"
+            android:textColorHint="@color/colorBaseWhite"
+            android:visibility="@{TextUtils.isEmpty(input.inputRightString) ? View.GONE : View.VISIBLE}" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_5"
+            android:layout_alignParentBottom="true"
+            android:background="@{TextUtils.isEmpty(input.inputEditString) ? @color/line_empty : @color/line_full}" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.qm.module_umshare.ui.dialog.OnlyOneItemViewModel" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_24"
+        android:orientation="horizontal">
+
+        <com.qm.lib.widget.dim.AppTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:paddingRight="@dimen/dp_4"
+            android:text="@{viewModel.item.key}"
+            android:textColor="#D51E00"
+            android:textSize="@dimen/sp_13"
+            android:textStyle="bold" />
+
+        <com.qm.lib.widget.dim.AppTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_4"
+            android:text="@{viewModel.item.value}"
+            android:textColor="#D51E00"
+            android:textSize="@dimen/sp_13"
+            android:textStyle="bold" />
+    </LinearLayout>
+</layout>

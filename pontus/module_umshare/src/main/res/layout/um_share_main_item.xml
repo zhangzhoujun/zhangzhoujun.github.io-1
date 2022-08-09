@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.qm.module_umshare.ui.share.ShareItemViewModel" />
+
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:binding="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55"
+        android:gravity="center"
+        android:orientation="vertical"
+        binding:onClickCommand="@{viewModel.onItemCLick}">
+
+        <com.qm.lib.widget.dim.AppImageView
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            app:resId="@{viewModel.item.icon}" />
+
+        <com.qm.lib.widget.dim.AppTextView
+            style="@style/style_text_1F_12"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="@{viewModel.item.name}" />
+
+    </LinearLayout>
+</layout>

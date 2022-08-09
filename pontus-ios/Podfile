@@ -1,0 +1,32 @@
+platform :ios, '9.0'
+
+target 'Pontus' do
+    use_frameworks!
+  inhibit_all_warnings!
+
+pod 'SnapKitExtend'
+pod 'Then'
+pod 'Moya'
+pod 'ObjectMapper'
+pod 'SwiftyJSON'
+pod 'Kingfisher'
+pod 'Reusable'
+pod 'MJRefresh'
+pod 'MBProgressHUD'
+pod 'HMSegmentedControl'
+pod 'IQKeyboardManagerSwift'
+pod 'EmptyDataSet-Swift'
+pod 'UINavigation-SXFixSpace'
+pod 'LLCycleScrollView'
+pod 'SwiftyFitsize'
+pod 'MCToast'
+pod "SwiftyXMLParser"
+
+pod 'UMCommon'
+pod 'UMDevice'
+pod 'UMAPM'
+pod 'UMShare/UI'
+pod 'UMShare/Social/WeChat'
+pod 'UMCCommonLog'
+
+end

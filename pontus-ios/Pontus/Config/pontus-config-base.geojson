@@ -1,0 +1,16 @@
+{
+  "app_name": "某信",
+  "app_key": "mouxin",
+  "app_id": "MOUXIN_20211109113001",
+  "app_secret": "b03c1b10aa4c717a33221aa0ee3db3dc",
+  "packagename": "com.qymc.mouxin",
+  "scheme_host": "com.qymc.mouxin",
+  "version_name": "1.0.0",
+  "version_code": 100,
+  "show_guide": 1,
+  "channel_name": "value",
+  "base_server_url": "",
+  "base_web_url": "",
+  "base_server_url_test": "http://bts.gaea-b.cn",
+  "base_web_url_test": ""
+}

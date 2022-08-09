@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#448EF7</color>
+    <color name="colorPrimaryDark">#448EF7</color>
+    <color name="colorAccent">#448EF7</color>
+
+
+    <color name="color_dark">#448EF7</color>
+    <color name="color_light">#79C1FC</color>
+    <color name="color_alpha_start">#79C1FC</color>
+    <color name="color_alpha_end">#448EF7</color>
+    <color name="color_alpha_start_click">#6679C1FC</color>
+    <color name="color_alpha_end_click">#66448EF7</color>
+</resources>

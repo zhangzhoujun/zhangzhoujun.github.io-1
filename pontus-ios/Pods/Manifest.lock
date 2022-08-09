@@ -1,0 +1,136 @@
+PODS:
+  - Alamofire (4.9.1)
+  - EmptyDataSet-Swift (5.0.0)
+  - HMSegmentedControl (1.5.6)
+  - IQKeyboardManagerSwift (6.5.9)
+  - Kingfisher (4.10.1)
+  - LLCycleScrollView (1.5.4):
+    - Kingfisher (<= 4.10.1)
+  - lottie-ios (3.2.3)
+  - MBProgressHUD (1.2.0)
+  - MCToast (0.1.0):
+    - lottie-ios
+  - MJRefresh (3.7.5)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - ObjectMapper (4.2.0)
+  - Result (4.1.0)
+  - Reusable (4.1.2):
+    - Reusable/Storyboard (= 4.1.2)
+    - Reusable/View (= 4.1.2)
+  - Reusable/Storyboard (4.1.2)
+  - Reusable/View (4.1.2)
+  - SnapKit (4.2.0)
+  - SnapKitExtend (1.0.7):
+    - SnapKit
+  - SwiftyFitsize (1.4.0)
+  - SwiftyJSON (5.0.1)
+  - SwiftyXMLParser (5.6.0)
+  - Then (2.7.0)
+  - UINavigation-SXFixSpace (1.2.4)
+  - UMAPM (1.5.5)
+  - UMCCommonLog (2.0.2)
+  - UMCommon (7.3.5):
+    - UMDevice
+  - UMDevice (2.1.0)
+  - UMShare/Core (6.10.4):
+    - UMCommon
+  - UMShare/Social/ReducedWeChat (6.10.4):
+    - UMCommon
+    - UMShare/Core
+  - UMShare/Social/WeChat (6.10.4):
+    - UMCommon
+    - UMShare/Core
+    - UMShare/Social/ReducedWeChat
+  - UMShare/UI (6.10.4):
+    - UMCommon
+    - UMShare/Core
+
+DEPENDENCIES:
+  - EmptyDataSet-Swift
+  - HMSegmentedControl
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - LLCycleScrollView
+  - MBProgressHUD
+  - MCToast
+  - MJRefresh
+  - Moya
+  - ObjectMapper
+  - Reusable
+  - SnapKitExtend
+  - SwiftyFitsize
+  - SwiftyJSON
+  - SwiftyXMLParser
+  - Then
+  - UINavigation-SXFixSpace
+  - UMAPM
+  - UMCCommonLog
+  - UMCommon
+  - UMDevice
+  - UMShare/Social/WeChat
+  - UMShare/UI
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - EmptyDataSet-Swift
+    - HMSegmentedControl
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - LLCycleScrollView
+    - lottie-ios
+    - MBProgressHUD
+    - MCToast
+    - MJRefresh
+    - Moya
+    - ObjectMapper
+    - Result
+    - Reusable
+    - SnapKit
+    - SnapKitExtend
+    - SwiftyFitsize
+    - SwiftyJSON
+    - SwiftyXMLParser
+    - Then
+    - UINavigation-SXFixSpace
+    - UMAPM
+    - UMCCommonLog
+    - UMCommon
+    - UMDevice
+    - UMShare
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  EmptyDataSet-Swift: eb382c0c87a2d9c678077385a595cec52da38171
+  HMSegmentedControl: 34c1f54d822d8308e7b24f5d901ec674dfa31352
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  LLCycleScrollView: 77f6e11980d1cd010ee9ee87e94da4e8026ccd21
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MCToast: accd8b0d4653bcd6b3b1a9770802c2358614e6a5
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SnapKitExtend: 00ee4db6d1f80bee01a1e75745f2a6ae695ba662
+  SwiftyFitsize: 7b12144a362b0c233d8fb8817e54988a60d92b02
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  SwiftyXMLParser: 9b98995235961881322015ebe38d1f3d7c953bd7
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
+  UINavigation-SXFixSpace: 10f223253ebff2ceefa26694e23b7694269763c4
+  UMAPM: 1ab13287a2b05c1d491009321270daddf5659a74
+  UMCCommonLog: bea707e50c85cef4b0eb47cc5c7226bb843245ca
+  UMCommon: ab4d875ddefe1b06c60b577e4a58bc4d433ee067
+  UMDevice: 04948a92184e8d25f1369b635dff5490c1f063e0
+  UMShare: 84edf6d080f524d109271164ba2b07650f69d691
+
+PODFILE CHECKSUM: f3940ce58afe7d7c35d51e546bc13b43e67b1371
+
+COCOAPODS: 1.11.2
