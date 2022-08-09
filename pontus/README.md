@@ -6,7 +6,7 @@
 * 各module业务层
 * 基础库
 
-![111.png](quiver-image-url/867DFE973E05E62DEFF2CAFDFA7DABFB.png =1078x617)
+![APP层级](https://zzjtest.oss-cn-hangzhou.aliyuncs.com/11.png "APP层级")
 
 
 ## 项目所引用三方库及基础配置在config.gradle文件中，各module需要引用该文件及配置ARouter框架
